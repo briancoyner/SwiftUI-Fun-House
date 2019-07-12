@@ -141,12 +141,12 @@
 		5D81BD0622D7FE6E0051908E /* Progress */ = {
 			isa = PBXGroup;
 			children = (
+				5D81BD0F22D800940051908E /* ProgressDemoView.swift */,
 				5D81BD0422D7FDF80051908E /* RingShape.swift */,
 				5D81BD0722D7FE7C0051908E /* RingView.swift */,
 				5D81BD0922D7FED10051908E /* AnimatingRingView.swift */,
 				5D81BD0B22D7FFAC0051908E /* AnimatableProgressShape.swift */,
 				5D81BD0D22D7FFE80051908E /* ProgressView.swift */,
-				5D81BD0F22D800940051908E /* ProgressDemoView.swift */,
 			);
 			path = Progress;
 			sourceTree = "<group>";

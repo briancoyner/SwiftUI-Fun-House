@@ -16,7 +16,7 @@ struct LissajousView: View {
     var body: some View {
         ZStack {
             CoordinateView()
-                .stroke(Color.gray, lineWidth: Length(1))
+                .stroke(Color.red, lineWidth: Length(1))
             Lissajous(amplitude: amplitude, a: a, b: b, delta: delta)
                 .stroke(Color.blue, lineWidth: Length(4))
         }
