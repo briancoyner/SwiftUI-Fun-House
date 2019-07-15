@@ -1,44 +1,43 @@
 //
-//  ProgressView.swift
-//  SwiftUI Fun House
-//
 //  Created by Brian Coyner on 7/11/19.
 //  Copyright © 2019 Brian Coyner. All rights reserved.
 //
 
 import SwiftUI
 
-struct ProgressView: View {
-    
+struct ProgressView<AdditionalContent>: View where AdditionalContent : View {
     var color: Color
-    var progress: Double = 0.0
+    var progress: CGFloat
+    
+    private let additionalContent: AdditionalContent
+    
+    init(color: Color, progress: CGFloat, additionalContent: () -> AdditionalContent) {
+        self.color = color
+        self.progress = progress
+        self.additionalContent = additionalContent()
+    }
     
     var body: some View {
-        
-        GeometryReader { context in
+        GeometryReader { [color, progress] context in
             ZStack {
-                Text(verbatim: "\(format: self.progress, using: .percent)")
-                    .color(self.color)
-                    .font(.system(size: context.size.width * 0.15))
-                Group {
-                    RingShape(endAngle: .degrees(360))
-                        .stroke(Color.gray, lineWidth: Length(4))
-                    RingShape(endAngle: .degrees(360))
-                        .trim(from: 0, to: CGFloat(self.progress))
-                        .stroke(self.color, style: StrokeStyle(lineWidth: 4, lineCap: .round))
-                }
-                .rotationEffect(.degrees(-90))
+                Circle()
+                    .trim(from: 0, to: progress)
+                    .stroke(color, lineWidth: self.progressLineWidth(basedOn: context.size))
+                    .rotationEffect(.degrees(-90))
+                self.additionalContent
+                    .frame(width: context.size.width, height: context.size.height, alignment: .center)
+                    .cornerRadius(context.size.width * 0.05)
+                    .foregroundColor(color)
             }
-            .padding()
             .aspectRatio(1, contentMode: .fit)
         }
     }
-}
-
-#if DEBUG
-struct ProgressView_Previews : PreviewProvider {
-    static var previews: some View {
-        ProgressView(color: .blue, progress: 33)
+    
+    fileprivate func progressLineWidth(basedOn size: CGSize) -> CGFloat {
+        return floor(max(radius(baseOn: size) * 0.15, 2.0))
+    }
+    
+    fileprivate func radius(baseOn size: CGSize) -> CGFloat {
+        return min(size.width, size.height) * 0.5
     }
 }
-#endif

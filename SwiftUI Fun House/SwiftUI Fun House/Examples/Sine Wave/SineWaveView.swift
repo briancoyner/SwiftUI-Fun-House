@@ -1,23 +1,22 @@
 //
-//  Created by Brian Coyner on 7/11/19.
+//  Created by Brian Coyner on 7/17/19.
 //  Copyright © 2019 Brian Coyner. All rights reserved.
 //
 
 import Foundation
 import SwiftUI
 
-struct LissajousView: View {
+struct SineWaveView: View {
     
-    var amplitude: Double
-    var a: Double
-    var b: Double
-    var delta: Double
+    var amplitude: CGFloat
+    var frequency: CGFloat
+    var phase: CGFloat
     
     var body: some View {
         ZStack {
             CoordinateView()
                 .stroke(Color.red, lineWidth: 1)
-            Lissajous(amplitude: amplitude, a: a, b: b, delta: delta)
+            SineWave(amplitude: amplitude, frequency: frequency, phase: phase)
                 .stroke(Color.blue, lineWidth: 2)
         }
         .aspectRatio(1, contentMode: .fit)
