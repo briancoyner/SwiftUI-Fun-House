@@ -4,14 +4,15 @@
 //
 
 import Foundation
+import UIKit
 
 extension String.StringInterpolation {
     
-    mutating func appendInterpolation(format value: Double, using style: NumberFormatter.Style) {
+    mutating func appendInterpolation<Numeric>(format value: Numeric, using style: NumberFormatter.Style) {
         let formatter = NumberFormatter()
         formatter.numberStyle = style
         
-        if let result = formatter.string(from: value as NSNumber) {
+        if let result = formatter.string(from: value as! NSNumber) {
             appendLiteral(result)
         }
     }

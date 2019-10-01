@@ -6,6 +6,9 @@
 import Foundation
 import SwiftUI
 
+/// A demo showing how to create an animatable Lissajous curve using SwiftUI.
+/// This is based on my Core Animation Fun House example code.
+
 struct LissajousDemoView: View {
     
     @State private var amplitude: Double = 100
@@ -15,22 +18,27 @@ struct LissajousDemoView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("Amplitude")
-                Slider(value: $amplitude.animation(), from: 44, through: 180, by: 1)
-            }
-            HStack {
-                Text("Delta")
-                Slider(value: $delta.animation(), from: 0, through: 10, by: 0.01)
-            }
-            Stepper(value: $a.animation(), in: 0...10, step: 1) {
-                Text(verbatim: "A (\(format: a, using: .decimal))")
-            }
-            Stepper(value: $b.animation(), in: 0...10, step: 1) {
-                Text(verbatim: "B (\(format: b, using: .decimal))")
-            }
             LissajousView(amplitude: amplitude, a: a, b: b, delta: delta)
-        }.padding()
+            Divider().padding()
+            VStack {
+                HStack {
+                    Slider(value: $amplitude.animation(), in: 44...180, step: 1) {
+                        Text("Amplitude")
+                    }
+                }
+                HStack {
+                    Slider(value: $delta.animation(), in: 0...10, step: 0.01) {
+                        Text("Delta")
+                    }
+                }
+                Stepper(value: $a.animation(), in: 0...10, step: 1.0) {
+                    Text(verbatim: "A (\(format: a, using: .decimal))")
+                }
+                Stepper(value: $b.animation(), in: 0...10, step: 1.0) {
+                    Text(verbatim: "B (\(format: b, using: .decimal))")
+                }
+            }.padding()
+        }
     }
 }
 
