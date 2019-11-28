@@ -20,15 +20,10 @@ struct MenuView : View {
                     NavigationLink("Contextual `ProgressView`", destination: ContextualProgressViewDemo())
                     NavigationLink("Indeterminate Progress", destination: IndeterminateProgressDemoView())
                 }
+                Section(header: Text("Forms")) {
+                    NavigationLink("Simple Customer Form", destination: CustomerForm())
+                }
             }.navigationBarTitle("SwiftUI Fun House")
         }
     }
 }
-
-#if DEBUG
-struct MenuView_Previews : PreviewProvider {
-    static var previews: some View {
-        MenuView()
-    }
-}
-#endif
