@@ -35,6 +35,9 @@
 		5DC2030A22DC0848005F7F07 /* ProgressText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC2030922DC0848005F7F07 /* ProgressText.swift */; };
 		5DC2030C22DC2B85005F7F07 /* ProgressStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC2030B22DC2B85005F7F07 /* ProgressStop.swift */; };
 		5DC40CC922DAD51C0026422B /* ProgressDemoPropertiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC40CC822DAD51C0026422B /* ProgressDemoPropertiesView.swift */; };
+		5DFA925A23457890007B3055 /* CustomerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA925923457890007B3055 /* CustomerForm.swift */; };
+		5DFA925E234578AC007B3055 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA925D234578AC007B3055 /* Customer.swift */; };
+		5DFA926023457DDC007B3055 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA925F23457DDC007B3055 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		5DC2030922DC0848005F7F07 /* ProgressText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressText.swift; sourceTree = "<group>"; };
 		5DC2030B22DC2B85005F7F07 /* ProgressStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStop.swift; sourceTree = "<group>"; };
 		5DC40CC822DAD51C0026422B /* ProgressDemoPropertiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemoPropertiesView.swift; sourceTree = "<group>"; };
+		5DFA925923457890007B3055 /* CustomerForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerForm.swift; sourceTree = "<group>"; };
+		5DFA925D234578AC007B3055 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		5DFA925F23457DDC007B3055 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 				5D81BCE622D7EBAF0051908E /* Assets.xcassets */,
 				5D81BCEB22D7EBAF0051908E /* LaunchScreen.storyboard */,
 				5D81BCEE22D7EBAF0051908E /* Info.plist */,
+				5DFA925F23457DDC007B3055 /* Localizable.strings */,
 				5D81BCE822D7EBAF0051908E /* Preview Content */,
 			);
 			path = "SwiftUI Fun House";
@@ -162,6 +169,7 @@
 		5D81BD0322D7FDD40051908E /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				5DFA92572345787C007B3055 /* Forms */,
 				5D1D493922E01D5A00B6722D /* Sine Wave */,
 				5D81BCF922D7ED610051908E /* Lissajous */,
 				5D81BD0622D7FE6E0051908E /* Progress */,
@@ -187,6 +195,23 @@
 				5D050CDD22DD6A010045F744 /* ProgressDemoProperties.swift */,
 			);
 			path = Progress;
+			sourceTree = "<group>";
+		};
+		5DFA92572345787C007B3055 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA925823457885007B3055 /* Basic */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		5DFA925823457885007B3055 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA925923457890007B3055 /* CustomerForm.swift */,
+				5DFA925D234578AC007B3055 /* Customer.swift */,
+			);
+			path = Basic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D81BCED22D7EBAF0051908E /* LaunchScreen.storyboard in Resources */,
+				5DFA926023457DDC007B3055 /* Localizable.strings in Resources */,
 				5D81BCEA22D7EBAF0051908E /* Preview Assets.xcassets in Resources */,
 				5D81BCE722D7EBAF0051908E /* Assets.xcassets in Resources */,
 			);
@@ -274,6 +300,7 @@
 				5D81BCFB22D7ED840051908E /* LissajousShape.swift in Sources */,
 				5DC2030822DB57E8005F7F07 /* SimpleProgressViewDemo.swift in Sources */,
 				5D81BCF822D7ED460051908E /* NumberFormatter+ConvenienceInitializers.swift in Sources */,
+				5DFA925E234578AC007B3055 /* Customer.swift in Sources */,
 				5DC2030C22DC2B85005F7F07 /* ProgressStop.swift in Sources */,
 				5D050CE222DD6EC10045F744 /* ContextualProgressViewDemo.swift in Sources */,
 				5D81BCFF22D7EDD50051908E /* LissajousView.swift in Sources */,
@@ -283,6 +310,7 @@
 				5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */,
 				5D050CE422DEAC340045F744 /* IndeterminateProgressDemoView.swift in Sources */,
 				5D050CDE22DD6A010045F744 /* ProgressDemoProperties.swift in Sources */,
+				5DFA925A23457890007B3055 /* CustomerForm.swift in Sources */,
 				5D1D494022E01EC500B6722D /* SineWave.swift in Sources */,
 				5D81BD1022D800940051908E /* SimpleCircleProgressDemoView.swift in Sources */,
 			);

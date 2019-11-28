@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SwiftUI Fun House
+
+  Created by Brian Coyner on 10/2/19.
+  Copyright © 2019 Brian Coyner. All rights reserved.
+*/
+
+"customer-form.first-name.label" = "First Name";
+"customer-form.last-name.label" = "Last Name";
+"customer-form.is-favorite.label" = "Is Favorite?";
+"customer-form.print-button.label" = "Log";
