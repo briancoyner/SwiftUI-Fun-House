@@ -14,21 +14,18 @@ struct ContextualProgressViewDemo : View {
         VStack {
             VStack(spacing: 44) {
                 ProgressView(color: properties.selectedColor, progress: properties.progress) {
-                    ZStack {
-                        Circle()
-                            .inset(by: 8)
-                            .stroke(properties.selectedColor, lineWidth: 2)
-                        ProgressStop()
-                    }
+                    Circle()
+                        .inset(by: 8)
+                        .stroke(properties.selectedColor, lineWidth: 2)
+                        .overlay(ProgressStop())
                 }
                 Divider()
                 ProgressView(color: properties.selectedColor, progress: properties.progress) {
-                    ZStack {
-                        Circle()
-                            .inset(by: 8)
-                            .stroke(properties.selectedColor, lineWidth: 2)
-                        ProgressText(progress: properties.progress)
-                    }
+                    Circle()
+                        .inset(by: 8)
+                        .stroke(properties.selectedColor, lineWidth: 2)
+                        .overlay(ProgressText(progress: properties.progress))
+                    
                 }
             }
             Divider().padding([.top, .bottom])

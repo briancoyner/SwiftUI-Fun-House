@@ -18,17 +18,17 @@ struct ProgressView<AdditionalContent>: View where AdditionalContent : View {
     }
     
     var body: some View {
-        GeometryReader { [color, progress] context in
-            ZStack {
-                Circle()
-                    .trim(from: 0, to: progress)
-                    .stroke(color, lineWidth: self.progressLineWidth(basedOn: context.size))
-                    .rotationEffect(.degrees(-90))
-                self.additionalContent
-                    .frame(width: context.size.width, height: context.size.height, alignment: .center)
-                    .cornerRadius(context.size.width * 0.05)
-                    .foregroundColor(color)
-            }
+        GeometryReader { [color, progress, additionalContent] context in
+            Circle()
+                .trim(from: 0, to: progress)
+                .stroke(color, lineWidth: self.progressLineWidth(basedOn: context.size))
+                .rotationEffect(.degrees(-90))
+                .overlay(
+                    additionalContent
+                        .frame(width: context.size.width, height: context.size.height, alignment: .center)
+                        .cornerRadius(context.size.width * 0.05)
+                        .foregroundColor(color)
+            )
             .aspectRatio(1, contentMode: .fit)
         }
     }

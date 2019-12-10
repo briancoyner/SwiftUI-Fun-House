@@ -15,6 +15,7 @@ struct IndeterminateProgressRingView: View {
     private let animation = Animation
         .linear
         .repeatForever(autoreverses: false)
+        .speed(0.15)
     
     var body: some View {
         return Circle()
