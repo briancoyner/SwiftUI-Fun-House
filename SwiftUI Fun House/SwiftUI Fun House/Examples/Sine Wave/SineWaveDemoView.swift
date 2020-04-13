@@ -19,9 +19,7 @@ struct SineWaveDemoView: View {
     
     var body: some View {
         VStack {
-            VStack {
-                SineWaveView(amplitude: amplitude, frequency: frequency, phase: phase)
-            }
+            SineWaveView(amplitude: amplitude, frequency: frequency, phase: phase)
             Divider().padding([.top, .bottom])
             VStack(spacing: 32) {
                 Slider(value: $amplitude.animation(), in: 0...160, minimumValueLabel: Image(systemName: "minus"), maximumValueLabel: Image(systemName: "plus")) {
