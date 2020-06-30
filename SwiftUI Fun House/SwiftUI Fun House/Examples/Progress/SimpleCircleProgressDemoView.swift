@@ -11,7 +11,7 @@ struct SimpleCircleProgressDemoView: View {
     @ObservedObject var properties = ProgressDemoProperties()
     
     var body: some View {
-        VStack {
+        VStack(spacing: 44) {
             // A stroked circle looks pretty good
             Circle()
                 .trim(from: 0, to: properties.progress)
@@ -37,6 +37,7 @@ struct SimpleCircleProgressDemoView: View {
                 .stroke(properties.selectedColor, lineWidth: 8)
 
             Divider()
+
             ProgressDemoPropertiesView(properties: properties)
         }.padding()
     }

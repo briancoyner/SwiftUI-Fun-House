@@ -17,16 +17,17 @@ struct CustomerForm: View {
             Section {
                 TextField("customer-form.first-name.label", text: $customer.firstName)
                 TextField("customer-form.last-name.label", text: $customer.lastName)
-                Toggle("customer-form.is-favorite.label", isOn: $customer.isFavorite)
+                Toggle("customer-form.is-favorite.label", isOn: $customer.isFavorite.animation())
 
                 if customer.isFavorite {
-                    Text(customer.firstName)
+                    Label("customer-form-celebrate.label", systemImage: "heart.fill")
                 }
 
                 Button("customer-form.print-button.label") {
                     print("Customer: \(self.customer.firstName) \(self.customer.lastName)")
                 }
             }
-        }.navigationBarTitle(customer.firstName)
+        }
+        .navigationBarTitle(customer.firstName)
     }
 }

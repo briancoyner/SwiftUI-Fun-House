@@ -19,19 +19,20 @@ struct SineWaveDemoView: View {
     
     var body: some View {
         VStack {
+            Spacer()
             SineWaveView(amplitude: amplitude, frequency: frequency, phase: phase)
             Divider().padding([.top, .bottom])
             VStack(spacing: 32) {
-                Slider(value: $amplitude.animation(), in: 0...160, minimumValueLabel: Image(systemName: "minus"), maximumValueLabel: Image(systemName: "plus")) {
-                    Text("Amplitude \(amplitude)")
-                }
-                Slider(value: $frequency.animation(), in: 0.0...0.16) {
-                    Text("Frequency")
-                }
-                Slider(value: $phase.animation(), in: -.pi...CGFloat.pi) {
-                    Text("Phase")
-                }
-            }.padding()
+                Slider(value: $amplitude.animation(), in: 0...160)
+                    .label("Amplitude")
+
+                Slider(value: $frequency.animation(), in: 0.0...0.16)
+                    .label("Frequency")
+
+                Slider(value: $phase.animation(), in: -.pi...CGFloat.pi)
+                    .label("Phase")
+            }
+            .padding()
         }
     }
 }

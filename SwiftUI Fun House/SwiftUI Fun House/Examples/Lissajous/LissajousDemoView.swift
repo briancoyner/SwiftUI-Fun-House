@@ -18,26 +18,24 @@ struct LissajousDemoView: View {
     
     var body: some View {
         VStack {
+            Spacer()
             LissajousView(amplitude: amplitude, a: a, b: b, delta: delta)
             Divider().padding()
             VStack {
-                HStack {
-                    Slider(value: $amplitude.animation(), in: 44...180, step: 1) {
-                        Text("Amplitude")
-                    }
-                }
-                HStack {
-                    Slider(value: $delta.animation(), in: 0...10, step: 0.01) {
-                        Text("Delta")
-                    }
-                }
+                Slider(value: $amplitude.animation(), in: 44...180, step: 1)
+                    .label("Amplitude")
+
+                Slider(value: $delta.animation(), in: 0...10, step: 0.01)
+                    .label("Delta")
+
                 Stepper(value: $a.animation(), in: 0...10, step: 1.0) {
                     Text(verbatim: "A (\(format: a, using: .decimal))")
                 }
                 Stepper(value: $b.animation(), in: 0...10, step: 1.0) {
                     Text(verbatim: "B (\(format: b, using: .decimal))")
                 }
-            }.padding()
+            }
+            .padding()
         }
     }
 }

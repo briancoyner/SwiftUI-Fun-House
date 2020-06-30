@@ -11,7 +11,7 @@ struct SimplePieSliceProgressDemoView : View {
     @ObservedObject private var properties = ProgressDemoProperties()
     
     var body: some View {
-        VStack {
+        VStack(spacing: 44) {
             PieSlice()
                 .trim(from: 0, to: properties.progress)
                 .stroke(properties.selectedColor, lineWidth: 8)
@@ -21,6 +21,7 @@ struct SimplePieSliceProgressDemoView : View {
                 .fill(properties.selectedColor)
 
             Divider()
+            
             ProgressDemoPropertiesView(properties: properties)
         }.padding()
     }

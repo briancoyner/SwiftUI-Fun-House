@@ -9,12 +9,12 @@ struct ProgressView<AdditionalContent>: View where AdditionalContent : View {
     var color: Color
     var progress: CGFloat
     
-    private let additionalContent: AdditionalContent
+    private let additionalContent: () -> AdditionalContent
     
-    init(color: Color, progress: CGFloat, additionalContent: () -> AdditionalContent) {
+    init(color: Color, progress: CGFloat, @ViewBuilder additionalContent: @escaping () -> AdditionalContent) {
         self.color = color
         self.progress = progress
-        self.additionalContent = additionalContent()
+        self.additionalContent = additionalContent
     }
     
     var body: some View {
@@ -24,20 +24,17 @@ struct ProgressView<AdditionalContent>: View where AdditionalContent : View {
                 .stroke(color, lineWidth: self.progressLineWidth(basedOn: context.size))
                 .rotationEffect(.degrees(-90))
                 .overlay(
-                    additionalContent
-                        .frame(width: context.size.width, height: context.size.height, alignment: .center)
-                        .cornerRadius(context.size.width * 0.05)
+                    additionalContent()
                         .foregroundColor(color)
-            )
-            .aspectRatio(1, contentMode: .fit)
+                )
         }
     }
     
-    fileprivate func progressLineWidth(basedOn size: CGSize) -> CGFloat {
+    private func progressLineWidth(basedOn size: CGSize) -> CGFloat {
         return floor(max(radius(baseOn: size) * 0.15, 2.0))
     }
     
-    fileprivate func radius(baseOn size: CGSize) -> CGFloat {
+    private func radius(baseOn size: CGSize) -> CGFloat {
         return min(size.width, size.height) * 0.5
     }
 }

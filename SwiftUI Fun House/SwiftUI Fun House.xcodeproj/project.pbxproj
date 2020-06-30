@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D04E56E24AA83310090866B /* FunHouseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E56D24AA83310090866B /* FunHouseApp.swift */; };
+		5D04E57124AA95E80090866B /* Label+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E57024AA95E80090866B /* Label+Extension.swift */; };
 		5D050CDE22DD6A010045F744 /* ProgressDemoProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CDD22DD6A010045F744 /* ProgressDemoProperties.swift */; };
 		5D050CE022DD6C740045F744 /* SimplePieSliceProgressDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CDF22DD6C740045F744 /* SimplePieSliceProgressDemoView.swift */; };
 		5D050CE222DD6EC10045F744 /* ContextualProgressViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CE122DD6EC10045F744 /* ContextualProgressViewDemo.swift */; };
@@ -14,8 +16,6 @@
 		5D1D493B22E01D7300B6722D /* SineWaveDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493A22E01D7300B6722D /* SineWaveDemoView.swift */; };
 		5D1D493E22E01E7100B6722D /* SineWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493D22E01E7100B6722D /* SineWaveView.swift */; };
 		5D1D494022E01EC500B6722D /* SineWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493F22E01EC500B6722D /* SineWave.swift */; };
-		5D81BCE122D7EBAE0051908E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCE022D7EBAE0051908E /* AppDelegate.swift */; };
-		5D81BCE322D7EBAE0051908E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCE222D7EBAE0051908E /* SceneDelegate.swift */; };
 		5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCE422D7EBAE0051908E /* MenuView.swift */; };
 		5D81BCE722D7EBAF0051908E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCE622D7EBAF0051908E /* Assets.xcassets */; };
 		5D81BCEA22D7EBAF0051908E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCE922D7EBAF0051908E /* Preview Assets.xcassets */; };
@@ -41,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D04E56D24AA83310090866B /* FunHouseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunHouseApp.swift; sourceTree = "<group>"; };
+		5D04E57024AA95E80090866B /* Label+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Extension.swift"; sourceTree = "<group>"; };
 		5D050CDD22DD6A010045F744 /* ProgressDemoProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemoProperties.swift; sourceTree = "<group>"; };
 		5D050CDF22DD6C740045F744 /* SimplePieSliceProgressDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePieSliceProgressDemoView.swift; sourceTree = "<group>"; };
 		5D050CE122DD6EC10045F744 /* ContextualProgressViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextualProgressViewDemo.swift; sourceTree = "<group>"; };
@@ -49,8 +51,6 @@
 		5D1D493D22E01E7100B6722D /* SineWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaveView.swift; sourceTree = "<group>"; };
 		5D1D493F22E01EC500B6722D /* SineWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWave.swift; sourceTree = "<group>"; };
 		5D81BCDD22D7EBAE0051908E /* SwiftUI Fun House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Fun House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D81BCE022D7EBAE0051908E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D81BCE222D7EBAE0051908E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5D81BCE422D7EBAE0051908E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		5D81BCE622D7EBAF0051908E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D81BCE922D7EBAF0051908E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -87,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D04E56F24AA95D40090866B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5D04E57024AA95E80090866B /* Label+Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		5D1D493922E01D5A00B6722D /* Sine Wave */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,8 +167,7 @@
 		5D81BD0222D7FDC30051908E /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				5D81BCE022D7EBAE0051908E /* AppDelegate.swift */,
-				5D81BCE222D7EBAE0051908E /* SceneDelegate.swift */,
+				5D04E56D24AA83310090866B /* FunHouseApp.swift */,
 				5D81BCE422D7EBAE0051908E /* MenuView.swift */,
 			);
 			path = "App Delegate";
@@ -169,9 +176,10 @@
 		5D81BD0322D7FDD40051908E /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				5DFA92572345787C007B3055 /* Forms */,
+				5D04E56F24AA95D40090866B /* Common */,
 				5D1D493922E01D5A00B6722D /* Sine Wave */,
 				5D81BCF922D7ED610051908E /* Lissajous */,
+				5DFA92572345787C007B3055 /* Forms */,
 				5D81BD0622D7FE6E0051908E /* Progress */,
 			);
 			path = Examples;
@@ -241,7 +249,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Brian Coyner";
 				TargetAttributes = {
 					5D81BCDC22D7EBAE0051908E = {
@@ -250,7 +258,7 @@
 				};
 			};
 			buildConfigurationList = 5D81BCD822D7EBAE0051908E /* Build configuration list for PBXProject "SwiftUI Fun House" */;
-			compatibilityVersion = "Xcode 11.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -287,13 +295,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D81BD0A22D7FED10051908E /* IndeterminateProgressRingView.swift in Sources */,
-				5D81BCE122D7EBAE0051908E /* AppDelegate.swift in Sources */,
+				5D04E56E24AA83310090866B /* FunHouseApp.swift in Sources */,
 				5D1D493B22E01D7300B6722D /* SineWaveDemoView.swift in Sources */,
 				5DC40CC922DAD51C0026422B /* ProgressDemoPropertiesView.swift in Sources */,
 				5D81BD0522D7FDF80051908E /* PieSlice.swift in Sources */,
 				5D81BD0C22D7FFAC0051908E /* AnimatableProgressShape.swift in Sources */,
 				5D81BCF622D7ED160051908E /* StringInterpolation+NumberFormatterStyle.swift in Sources */,
-				5D81BCE322D7EBAE0051908E /* SceneDelegate.swift in Sources */,
 				5DC2030A22DC0848005F7F07 /* ProgressText.swift in Sources */,
 				5D050CE022DD6C740045F744 /* SimplePieSliceProgressDemoView.swift in Sources */,
 				5D81BCFD22D7EDB70051908E /* CenterCoordinateView.swift in Sources */,
@@ -309,6 +316,7 @@
 				5D81BD0122D7EE040051908E /* LissajousDemoView.swift in Sources */,
 				5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */,
 				5D050CE422DEAC340045F744 /* IndeterminateProgressDemoView.swift in Sources */,
+				5D04E57124AA95E80090866B /* Label+Extension.swift in Sources */,
 				5D050CDE22DD6A010045F744 /* ProgressDemoProperties.swift in Sources */,
 				5DFA925A23457890007B3055 /* CustomerForm.swift in Sources */,
 				5D1D494022E01EC500B6722D /* SineWave.swift in Sources */,
@@ -356,6 +364,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -380,7 +389,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -416,6 +424,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -434,7 +443,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -453,6 +461,7 @@
 				DEVELOPMENT_TEAM = KC5B683642;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI Fun House/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +482,7 @@
 				DEVELOPMENT_TEAM = KC5B683642;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI Fun House/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

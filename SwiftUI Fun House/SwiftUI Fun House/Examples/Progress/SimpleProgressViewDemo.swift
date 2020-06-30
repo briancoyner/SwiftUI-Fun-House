@@ -8,15 +8,19 @@ import SwiftUI
 
 struct SimpleProgressViewDemo : View {
     
-    @ObservedObject private var properties = ProgressDemoProperties()
+    @StateObject private var properties = ProgressDemoProperties()
     
     var body: some View {
         VStack {
             ProgressView(color: properties.selectedColor, progress: properties.progress) {
                 EmptyView()
             }
+            .padding()
+
             Divider()
+
             ProgressDemoPropertiesView(properties: properties)
-        }.padding()
+        }
+        .padding()
     }
 }
