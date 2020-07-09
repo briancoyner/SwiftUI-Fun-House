@@ -10,4 +10,5 @@
 "customer-form.last-name.label" = "Last Name";
 "customer-form.is-favorite.label" = "Is Favorite?";
 "customer-form.print-button.label" = "Log";
-"customer-form-celebrate.label" = "Celebrate";
+"customer-form.celebrate.label" = "Celebrate";
+"customer-form.birthdate.label" = "Birthdate";

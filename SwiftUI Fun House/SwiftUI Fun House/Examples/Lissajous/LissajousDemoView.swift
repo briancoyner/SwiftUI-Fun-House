@@ -20,13 +20,14 @@ struct LissajousDemoView: View {
         VStack {
             Spacer()
             LissajousView(amplitude: amplitude, a: a, b: b, delta: delta)
-            Divider().padding()
+            Divider()
+                .padding()
             VStack {
                 Slider(value: $amplitude.animation(), in: 44...180, step: 1)
-                    .label("Amplitude")
+                    .formLabel("Amplitude")
 
                 Slider(value: $delta.animation(), in: 0...10, step: 0.01)
-                    .label("Delta")
+                    .formLabel("Delta")
 
                 Stepper(value: $a.animation(), in: 0...10, step: 1.0) {
                     Text(verbatim: "A (\(format: a, using: .decimal))")

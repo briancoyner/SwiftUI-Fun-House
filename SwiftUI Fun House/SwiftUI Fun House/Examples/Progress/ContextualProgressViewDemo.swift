@@ -16,7 +16,7 @@ struct ContextualProgressViewDemo : View {
                 Text("Hello")
                 ProgressView(color: properties.selectedColor, progress: properties.progress) {
                     Circle()
-                        .inset(by: 8)
+                        .inset(by: 4)
                         .stroke(properties.selectedColor, lineWidth: 2)
                         .overlay(ProgressStop())
                 }
@@ -25,7 +25,7 @@ struct ContextualProgressViewDemo : View {
 
                 ProgressView(color: properties.selectedColor, progress: properties.progress) {
                     Circle()
-                        .inset(by: 8)
+                        .inset(by: 4)
                         .stroke(properties.selectedColor, lineWidth: 2)
                         .overlay(ProgressText(progress: properties.progress))
                     
@@ -36,7 +36,6 @@ struct ContextualProgressViewDemo : View {
 
             ProgressDemoPropertiesView(properties: properties)
         }
-        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
         .padding()
     }
 }

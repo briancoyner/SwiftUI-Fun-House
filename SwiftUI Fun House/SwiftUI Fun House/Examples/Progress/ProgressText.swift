@@ -11,8 +11,10 @@ struct ProgressText : View {
     
     var body: some View {
         GeometryReader { [progress] context in
-            Text(verbatim: "\(format: progress, using: .percent)")
-                .font(.system(size: context.size.width * 0.125))
+            ZStack {
+                Text(verbatim: "\(format: progress, using: .percent)")
+                    .font(.system(size: context.size.width * 0.125))
+            }
         }
     }
 }
