@@ -8,5 +8,6 @@ import Foundation
 final class Customer: ObservableObject {
     @Published var firstName: String = "Brian"
     @Published var lastName: String = "Coyner"
+    @Published var birthDate: Date = Date()
     @Published var isFavorite = false
 }

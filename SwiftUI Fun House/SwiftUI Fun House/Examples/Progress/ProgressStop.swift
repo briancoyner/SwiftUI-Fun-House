@@ -14,3 +14,9 @@ struct ProgressStop : View {
         }
     }
 }
+
+struct ProgressStop_Previews: PreviewProvider {
+    static var previews: some View {
+        ProgressStop()
+    }
+}

@@ -21,16 +21,17 @@ struct SineWaveDemoView: View {
         VStack {
             Spacer()
             SineWaveView(amplitude: amplitude, frequency: frequency, phase: phase)
-            Divider().padding([.top, .bottom])
+            Divider()
+                .padding([.top, .bottom])
             VStack(spacing: 32) {
                 Slider(value: $amplitude.animation(), in: 0...160)
-                    .label("Amplitude")
+                    .formLabel("Amplitude")
 
                 Slider(value: $frequency.animation(), in: 0.0...0.16)
-                    .label("Frequency")
+                    .formLabel("Frequency")
 
                 Slider(value: $phase.animation(), in: -.pi...CGFloat.pi)
-                    .label("Phase")
+                    .formLabel("Phase")
             }
             .padding()
         }

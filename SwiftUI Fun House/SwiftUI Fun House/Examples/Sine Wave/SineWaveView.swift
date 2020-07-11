@@ -19,6 +19,5 @@ struct SineWaveView: View {
             SineWave(amplitude: amplitude, frequency: frequency, phase: phase)
                 .stroke(Color.blue, lineWidth: 2)
         }
-        .aspectRatio(1, contentMode: .fit)
     }
 }

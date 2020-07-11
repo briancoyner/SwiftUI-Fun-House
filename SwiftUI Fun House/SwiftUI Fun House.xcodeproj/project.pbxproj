@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5D04E56E24AA83310090866B /* FunHouseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E56D24AA83310090866B /* FunHouseApp.swift */; };
-		5D04E57124AA95E80090866B /* Label+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E57024AA95E80090866B /* Label+Extension.swift */; };
 		5D050CDE22DD6A010045F744 /* ProgressDemoProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CDD22DD6A010045F744 /* ProgressDemoProperties.swift */; };
 		5D050CE022DD6C740045F744 /* SimplePieSliceProgressDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CDF22DD6C740045F744 /* SimplePieSliceProgressDemoView.swift */; };
 		5D050CE222DD6EC10045F744 /* ContextualProgressViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CE122DD6EC10045F744 /* ContextualProgressViewDemo.swift */; };
@@ -35,6 +34,7 @@
 		5DC2030A22DC0848005F7F07 /* ProgressText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC2030922DC0848005F7F07 /* ProgressText.swift */; };
 		5DC2030C22DC2B85005F7F07 /* ProgressStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC2030B22DC2B85005F7F07 /* ProgressStop.swift */; };
 		5DC40CC922DAD51C0026422B /* ProgressDemoPropertiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC40CC822DAD51C0026422B /* ProgressDemoPropertiesView.swift */; };
+		5DDF456324B63B55005CA54F /* FormLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDF456224B63B55005CA54F /* FormLabel.swift */; };
 		5DFA925A23457890007B3055 /* CustomerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA925923457890007B3055 /* CustomerForm.swift */; };
 		5DFA925E234578AC007B3055 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA925D234578AC007B3055 /* Customer.swift */; };
 		5DFA926023457DDC007B3055 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA925F23457DDC007B3055 /* Localizable.strings */; };
@@ -42,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		5D04E56D24AA83310090866B /* FunHouseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunHouseApp.swift; sourceTree = "<group>"; };
-		5D04E57024AA95E80090866B /* Label+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Extension.swift"; sourceTree = "<group>"; };
 		5D050CDD22DD6A010045F744 /* ProgressDemoProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemoProperties.swift; sourceTree = "<group>"; };
 		5D050CDF22DD6C740045F744 /* SimplePieSliceProgressDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePieSliceProgressDemoView.swift; sourceTree = "<group>"; };
 		5D050CE122DD6EC10045F744 /* ContextualProgressViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextualProgressViewDemo.swift; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		5DC2030922DC0848005F7F07 /* ProgressText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressText.swift; sourceTree = "<group>"; };
 		5DC2030B22DC2B85005F7F07 /* ProgressStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStop.swift; sourceTree = "<group>"; };
 		5DC40CC822DAD51C0026422B /* ProgressDemoPropertiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemoPropertiesView.swift; sourceTree = "<group>"; };
+		5DDF456224B63B55005CA54F /* FormLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabel.swift; sourceTree = "<group>"; };
 		5DFA925923457890007B3055 /* CustomerForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerForm.swift; sourceTree = "<group>"; };
 		5DFA925D234578AC007B3055 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		5DFA925F23457DDC007B3055 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		5D04E56F24AA95D40090866B /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				5D04E57024AA95E80090866B /* Label+Extension.swift */,
+				5DDF456224B63B55005CA54F /* FormLabel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -312,11 +312,11 @@
 				5D050CE222DD6EC10045F744 /* ContextualProgressViewDemo.swift in Sources */,
 				5D81BCFF22D7EDD50051908E /* LissajousView.swift in Sources */,
 				5D81BD0E22D7FFE80051908E /* ProgressView.swift in Sources */,
+				5DDF456324B63B55005CA54F /* FormLabel.swift in Sources */,
 				5D1D493E22E01E7100B6722D /* SineWaveView.swift in Sources */,
 				5D81BD0122D7EE040051908E /* LissajousDemoView.swift in Sources */,
 				5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */,
 				5D050CE422DEAC340045F744 /* IndeterminateProgressDemoView.swift in Sources */,
-				5D04E57124AA95E80090866B /* Label+Extension.swift in Sources */,
 				5D050CDE22DD6A010045F744 /* ProgressDemoProperties.swift in Sources */,
 				5DFA925A23457890007B3055 /* CustomerForm.swift in Sources */,
 				5D1D494022E01EC500B6722D /* SineWave.swift in Sources */,
