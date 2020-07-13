@@ -18,22 +18,24 @@ struct SineWaveDemoView: View {
     @State private var phase: CGFloat = 1
     
     var body: some View {
-        VStack {
-            Spacer()
-            SineWaveView(amplitude: amplitude, frequency: frequency, phase: phase)
-            Divider()
-                .padding([.top, .bottom])
-            VStack(spacing: 32) {
-                Slider(value: $amplitude.animation(), in: 0...160)
-                    .formLabel("Amplitude")
-
-                Slider(value: $frequency.animation(), in: 0.0...0.16)
-                    .formLabel("Frequency")
-
-                Slider(value: $phase.animation(), in: -.pi...CGFloat.pi)
-                    .formLabel("Phase")
+        Form {
+            Section {
+                SineWaveView(amplitude: amplitude, frequency: frequency, phase: phase)
+                    .frame(idealHeight: 180)
+                    .padding([.top, .bottom])
             }
-            .padding()
+
+            Section(header: Text("Amplitude")) {
+                Slider(value: $amplitude.animation(), in: 0...160)
+            }
+
+            Section(header: Text("Frequency")) {
+                Slider(value: $frequency.animation(), in: 0.0...0.16)
+            }
+
+            Section(header: Text("Phase")) {
+                Slider(value: $phase.animation(), in: -.pi...CGFloat.pi)
+            }
         }
     }
 }

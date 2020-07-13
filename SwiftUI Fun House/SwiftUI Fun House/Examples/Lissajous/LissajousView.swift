@@ -20,6 +20,5 @@ struct LissajousView: View {
             Lissajous(amplitude: amplitude, a: a, b: b, delta: delta)
                 .stroke(Color.blue, lineWidth: 2)
         }
-        .aspectRatio(1, contentMode: .fit)
     }
 }

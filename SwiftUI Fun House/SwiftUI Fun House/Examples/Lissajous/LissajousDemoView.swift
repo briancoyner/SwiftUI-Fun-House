@@ -18,33 +18,42 @@ struct LissajousDemoView: View {
     
     var body: some View {
         VStack {
-            Spacer()
+
             LissajousView(amplitude: amplitude, a: a, b: b, delta: delta)
-            Divider()
-                .padding()
-            VStack {
-                Slider(value: $amplitude.animation(), in: 44...180, step: 1)
-                    .formLabel("Amplitude")
+                .frame(maxHeight: 180)
+                .padding([.top, .bottom])
 
-                Slider(value: $delta.animation(), in: 0...10, step: 0.01)
-                    .formLabel("Delta")
-
-                Stepper(value: $a.animation(), in: 0...10, step: 1.0) {
-                    Text(verbatim: "A (\(format: a, using: .decimal))")
+            Form {
+                Section(header: Text("Amplitude")) {
+                    Slider(value: $amplitude.animation(), in: 22...84, step: 1)
                 }
-                Stepper(value: $b.animation(), in: 0...10, step: 1.0) {
-                    Text(verbatim: "B (\(format: b, using: .decimal))")
+
+                Section(header: Text("Delta")) {
+                    Slider(value: $delta.animation(), in: 0...10, step: 0.01)
+                }
+
+                Section {
+                    Stepper(value: $a.animation(), in: 0...10, step: 1.0) {
+                        Text(verbatim: "A (\(format: a, using: .decimal))")
+                    }
+
+                    Stepper(value: $b.animation(), in: 0...10, step: 1.0) {
+                        Text(verbatim: "B (\(format: b, using: .decimal))")
+                    }
                 }
             }
-            .padding()
         }
+        .navigationTitle("Lissajous")
     }
 }
 
 #if DEBUG
 struct LissajousDemoView_Previews : PreviewProvider {
     static var previews: some View {
-        LissajousDemoView()
+        NavigationView {
+            LissajousDemoView()
+        }
+
     }
 }
 #endif

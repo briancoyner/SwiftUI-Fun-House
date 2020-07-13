@@ -31,7 +31,6 @@ extension View where Self: FormLabelCapable {
 }
 
 extension Text: FormLabelCapable { }
-extension Slider: FormLabelCapable { }
 extension DatePicker: FormLabelCapable { }
 extension TextField: FormLabelCapable { }
 extension TextEditor: FormLabelCapable { }
