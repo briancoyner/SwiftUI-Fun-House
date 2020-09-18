@@ -27,7 +27,7 @@ struct PieSlice: Shape {
 }
 
 #if DEBUG
-struct RingShape_Previews : PreviewProvider {
+struct PieSlice_Previews : PreviewProvider {
     static var previews: some View {
         Group {
             PieSlice()

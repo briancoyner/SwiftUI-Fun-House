@@ -6,38 +6,30 @@
 import Combine
 import SwiftUI
 
+/// A demo showing the custom `ProminentProgressViewStyle` attached to a `ProgressView`
 struct ProminentProgressViewDemo : View {
     
     @ObservedObject private var properties = ProgressDemoProperties()
     
     var body: some View {
         VStack {
-            VStack(spacing: 44) {
-
-                ProgressView("Simple", value: properties.progress)
-
-                ProgressView("Style 1", value: properties.progress)
-                    .progressViewStyle(MyStyle())
-
-                ProgressView("Style 2", value: properties.progress)
-                    .progressViewStyle(MyStyle2())
-            }
-            .accentColor(properties.selectedColor)
+            ProgressView("Prominent Style", value: properties.progress)
+                .progressViewStyle(ProminentProgressViewStyle())
+                .padding(88)
 
             Divider().padding([.top, .bottom])
 
             ProgressDemoPropertiesView(properties: properties)
         }
+        .accentColor(properties.selectedColor)
         .padding()
     }
 }
 
 #if DEBUG
-struct ContextualProgressViewDemo_Previews : PreviewProvider {
+struct ProminentProgressViewDemo_Previews : PreviewProvider {
     static var previews: some View {
         ProminentProgressViewDemo()
     }
 }
 #endif
-
-

@@ -16,8 +16,7 @@ struct MenuView : View {
                 Section(header: Text("Circular Progress Views")) {
                     NavigationLink("Simple `Circle`", destination: SimpleCircleProgressDemoView())
                     NavigationLink("Simple `PieSlice`", destination: SimplePieSliceProgressDemoView())
-                    NavigationLink("Simple `ProgressView`", destination: SimpleProgressViewDemo())
-                    NavigationLink("Contextual `ProgressView`", destination: ContextualProgressViewDemo())
+                    NavigationLink("Contextual `ProgressView`", destination: ProminentProgressViewDemo())
                     NavigationLink("Indeterminate Progress", destination: IndeterminateProgressDemoView())
                 }
                 Section(header: Text("Forms")) {

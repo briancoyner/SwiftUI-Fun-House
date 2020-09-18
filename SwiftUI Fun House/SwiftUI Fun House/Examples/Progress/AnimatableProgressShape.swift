@@ -9,6 +9,8 @@ import SwiftUI
 /// already handles everything needed to build a "circular progress" shape.
 ///
 /// This example shows how to implement `animatableData` for a single primitive value.
+///
+/// - SeeAlso: `SineWave` and `Lissajous` for other animatable shape examples.
 
 struct AnimatableProgressShape: Shape {
     
