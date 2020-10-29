@@ -1,0 +1,20 @@
+/* 
+  Created by Brian Coyner on 10/2/19.
+  Copyright © 2019 Brian Coyner. All rights reserved.
+*/
+
+"customer-form.first-name.label" = "First Name";
+"customer-form.last-name.label" = "Last Name";
+"customer-form.is-favorite.label" = "Is Favorite?";
+"customer-form.print-button.label" = "Log";
+"customer-form.celebrate.label" = "Celebrate";
+"customer-form.birthdate.label" = "Birthdate";
+
+"sensor-track-button.record.text" = "Record";
+"sensor-track-status.recording-armed.text" = "Recording Armed";
+"sensor-track-status.recording.text" = "Recording";
+
+"sensor-track-status-hint.recording-armed.text" = "run engine over SensorTrack™ to begin";
+"sensor-track-status-hint.recording-armed-waiting.text" = "waiting for SensorTrack™ to respond";
+
+"sensor-track-button.unknown-elapsed-time.text" = "Unknown";

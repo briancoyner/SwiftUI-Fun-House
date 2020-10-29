@@ -19,10 +19,14 @@ struct MenuView : View {
                     NavigationLink("Contextual `ProgressView`", destination: ProminentProgressViewDemo())
                     NavigationLink("Indeterminate Progress", destination: IndeterminateProgressDemoView())
                 }
+                Section(header: Text("Recreating High Rail App Views In SwiftUI")) {
+                    NavigationLink("SensorTrack™ Recording", destination: RecordActionDemoView())
+                }
                 Section(header: Text("Forms")) {
                     NavigationLink("Simple Customer Form", destination: CustomerForm())
                 }
             }.navigationBarTitle("SwiftUI Fun House")
         }
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
