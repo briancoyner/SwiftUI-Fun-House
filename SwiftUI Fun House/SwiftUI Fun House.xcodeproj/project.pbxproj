@@ -34,8 +34,8 @@
 		5D81BD0522D7FDF80051908E /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BD0422D7FDF80051908E /* PieSlice.swift */; };
 		5D81BD0A22D7FED10051908E /* IndeterminateProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BD0922D7FED10051908E /* IndeterminateProgressRingView.swift */; };
 		5D81BD0C22D7FFAC0051908E /* AnimatableProgressShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BD0B22D7FFAC0051908E /* AnimatableProgressShape.swift */; };
-		5D81BD0E22D7FFE80051908E /* ProminentProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BD0D22D7FFE80051908E /* ProminentProgressViewStyle.swift */; };
 		5D81BD1022D800940051908E /* SimpleCircleProgressDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BD0F22D800940051908E /* SimpleCircleProgressDemoView.swift */; };
+		5D95934F254A5D1300E1EA73 /* ProminentProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BD0D22D7FFE80051908E /* ProminentProgressViewStyle.swift */; };
 		5DC2CF2B251797A300021284 /* RecordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC2CF2A251797A300021284 /* RecordStatusView.swift */; };
 		5DC2CF2F251954FF00021284 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC2CF2E251954FF00021284 /* SoundPlayer.swift */; };
 		5DC40CC922DAD51C0026422B /* ProgressDemoPropertiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC40CC822DAD51C0026422B /* ProgressDemoPropertiesView.swift */; };
@@ -342,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D95934F254A5D1300E1EA73 /* ProminentProgressViewStyle.swift in Sources */,
 				5D81BD0A22D7FED10051908E /* IndeterminateProgressRingView.swift in Sources */,
 				5D04E56E24AA83310090866B /* FunHouseApp.swift in Sources */,
 				5D1D493B22E01D7300B6722D /* SineWaveDemoView.swift in Sources */,
@@ -362,10 +363,8 @@
 				5D050CE222DD6EC10045F744 /* ProminentProgressViewDemo.swift in Sources */,
 				5D81BCFF22D7EDD50051908E /* LissajousView.swift in Sources */,
 				5DC2CF2B251797A300021284 /* RecordStatusView.swift in Sources */,
-				5D81BD0E22D7FFE80051908E /* ProminentProgressViewStyle.swift in Sources */,
 				5D54B4E9251444EB00D86E60 /* InteractiveProgressViewStyle.swift in Sources */,
 				5D37390824BA204400B28165 /* RecordActionButtonStyle.swift in Sources */,
-				5D81BD0E22D7FFE80051908E /* ProminentProgressViewStyle.swift in Sources */,
 				5DDF456324B63B55005CA54F /* FormLabel.swift in Sources */,
 				5D1D493E22E01E7100B6722D /* SineWaveView.swift in Sources */,
 				5D37390A24BA209A00B28165 /* RecordActionDemoView.swift in Sources */,
