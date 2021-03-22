@@ -15,7 +15,6 @@ A few demos showing techniques for animating `Shape`s using `AnimatablePair`s.
 
 A few demos showing techniques for creating a circular progress view using a custom `ProgressViewStyle`.
 
-
 ## High Rail app views in SwiftUI
 
 [High Rail](https://briancoyner.github.io/highrailapp/) is one my playground apps published to the [App Store](https://apps.apple.com/app/apple-store/id842021291). High Rail has a lot of custom views based on Core Animation and Core Graphics. In an effort to learn SwiftUI, I decided to publish SwiftUI demos showing how I re-created some of the app's views in SwiftUI. The amount of SwiftUI code (or lack thereof) is quite impressive compared to High Rail's custom Core Animation + Core Graphics code.
@@ -40,3 +39,9 @@ Here are the highlights:
 - Picker (segmented control) to simulate non-user interactive SensorTrack recording state changes (non-animating).
   - this allows for simulating how the view reacts to incoming hardware provided state changes
   - See `RecordActionDemoView`
+
+## Customizable Rounded Rectangle
+
+The `SwiftUI/RoundedRectangle` does not currently support selecting which corners to round. 
+The `AdaptiveRoundedRectangle` implements a `SwiftUI/Shape` that enables selecting which corners to round. 
+The API is similar to to `UIKit/UIBezierPath` and `UIKit/UIRectCorner`. 

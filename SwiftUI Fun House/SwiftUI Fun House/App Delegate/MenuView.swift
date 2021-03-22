@@ -22,6 +22,9 @@ struct MenuView : View {
                 Section(header: Text("Recreating High Rail App Views In SwiftUI")) {
                     NavigationLink("SensorTrack™ Recording", destination: RecordActionDemoView())
                 }
+                Section(header: Text("Adaptive Rounded Rectangle")) {
+                    NavigationLink("Adaptive Rounded Rectangle", destination: AdaptiveRoundedRectangleDemo())
+                }
                 Section(header: Text("Forms")) {
                     NavigationLink("Simple Customer Form", destination: CustomerForm())
                 }
