@@ -15,6 +15,8 @@
 		5D1D493B22E01D7300B6722D /* SineWaveDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493A22E01D7300B6722D /* SineWaveDemoView.swift */; };
 		5D1D493E22E01E7100B6722D /* SineWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493D22E01E7100B6722D /* SineWaveView.swift */; };
 		5D1D494022E01EC500B6722D /* SineWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493F22E01EC500B6722D /* SineWave.swift */; };
+		5D22EC4A2606A2900052F596 /* AdaptiveRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D22EC492606A2900052F596 /* AdaptiveRoundedRectangle.swift */; };
+		5D22EC4C2606A2EF0052F596 /* AdaptiveRoundedRectangleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D22EC4B2606A2EF0052F596 /* AdaptiveRoundedRectangleDemo.swift */; };
 		5D37390824BA204400B28165 /* RecordActionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37390724BA204400B28165 /* RecordActionButtonStyle.swift */; };
 		5D37390A24BA209A00B28165 /* RecordActionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37390924BA209A00B28165 /* RecordActionDemoView.swift */; };
 		5D54B4E9251444EB00D86E60 /* InteractiveProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54B4E8251444EB00D86E60 /* InteractiveProgressViewStyle.swift */; };
@@ -57,6 +59,8 @@
 		5D1D493A22E01D7300B6722D /* SineWaveDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaveDemoView.swift; sourceTree = "<group>"; };
 		5D1D493D22E01E7100B6722D /* SineWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaveView.swift; sourceTree = "<group>"; };
 		5D1D493F22E01EC500B6722D /* SineWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWave.swift; sourceTree = "<group>"; };
+		5D22EC492606A2900052F596 /* AdaptiveRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveRoundedRectangle.swift; sourceTree = "<group>"; };
+		5D22EC4B2606A2EF0052F596 /* AdaptiveRoundedRectangleDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveRoundedRectangleDemo.swift; sourceTree = "<group>"; };
 		5D37390724BA204400B28165 /* RecordActionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordActionButtonStyle.swift; sourceTree = "<group>"; };
 		5D37390924BA209A00B28165 /* RecordActionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordActionDemoView.swift; sourceTree = "<group>"; };
 		5D54B4E8251444EB00D86E60 /* InteractiveProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveProgressViewStyle.swift; sourceTree = "<group>"; };
@@ -120,6 +124,15 @@
 				5D1D493F22E01EC500B6722D /* SineWave.swift */,
 			);
 			path = "Sine Wave";
+			sourceTree = "<group>";
+		};
+		5D22EC482606A27B0052F596 /* Adaptive Rounded Rectangle */ = {
+			isa = PBXGroup;
+			children = (
+				5D22EC4B2606A2EF0052F596 /* AdaptiveRoundedRectangleDemo.swift */,
+				5D22EC492606A2900052F596 /* AdaptiveRoundedRectangle.swift */,
+			);
+			path = "Adaptive Rounded Rectangle";
 			sourceTree = "<group>";
 		};
 		5D37390624BA203200B28165 /* Record Action */ = {
@@ -208,6 +221,7 @@
 		5D81BD0322D7FDD40051908E /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				5D22EC482606A27B0052F596 /* Adaptive Rounded Rectangle */,
 				5D37390624BA203200B28165 /* Record Action */,
 				5D04E56F24AA95D40090866B /* Common */,
 				5D1D493922E01D5A00B6722D /* Sine Wave */,
@@ -367,12 +381,14 @@
 				5D37390824BA204400B28165 /* RecordActionButtonStyle.swift in Sources */,
 				5DDF456324B63B55005CA54F /* FormLabel.swift in Sources */,
 				5D1D493E22E01E7100B6722D /* SineWaveView.swift in Sources */,
+				5D22EC4A2606A2900052F596 /* AdaptiveRoundedRectangle.swift in Sources */,
 				5D37390A24BA209A00B28165 /* RecordActionDemoView.swift in Sources */,
 				5D81BD0122D7EE040051908E /* LissajousDemoView.swift in Sources */,
 				5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */,
 				5D050CE422DEAC340045F744 /* IndeterminateProgressDemoView.swift in Sources */,
 				5D54B4EC251445A200D86E60 /* InteractiveProgressViewDemo.swift in Sources */,
 				5D050CDE22DD6A010045F744 /* ProgressDemoProperties.swift in Sources */,
+				5D22EC4C2606A2EF0052F596 /* AdaptiveRoundedRectangleDemo.swift in Sources */,
 				5DFA925A23457890007B3055 /* CustomerForm.swift in Sources */,
 				5D1D494022E01EC500B6722D /* SineWave.swift in Sources */,
 				5D54B5172516B19E00D86E60 /* RecordActionSummaryView.swift in Sources */,
