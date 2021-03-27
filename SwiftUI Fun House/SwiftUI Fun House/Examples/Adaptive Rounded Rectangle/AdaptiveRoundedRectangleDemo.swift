@@ -29,40 +29,37 @@ struct AdaptiveRoundedRectangleDemo: View {
     private var height: CGFloat = 100
 
     var body: some View {
-        VStack {
-            AdaptiveRoundedRectangle(byRoundingCorners: corners, cornerRadius: cornerRadius)
-                .fill(Color.blue)
-                .frame(width: 300, height: height, alignment: .center)
-
-            AdaptiveRoundedRectangle(byRoundingCorners: corners, cornerRadius: cornerRadius)
-                .stroke(Color.blue)
-                .frame(width: 300, height: height, alignment: .center)
-
-            Spacer()
-
+        ScrollView {
             VStack {
+                AdaptiveRoundedRectangle(byRoundingCorners: corners, cornerRadius: cornerRadius)
+                    .fill(Color.blue)
+                    .frame(height: height, alignment: .center)
+                
+                AdaptiveRoundedRectangle(byRoundingCorners: corners, cornerRadius: cornerRadius)
+                    .stroke(Color.blue)
+                    .frame(height: height, alignment: .center)
+                
+                Spacer()
+                
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("Height")
                     Slider(value: $height, in: 44...CGFloat(100))
+                        .formLabel("Height")
                 }
-
-                Divider()
-
+                
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("Corner Radius")
                     Slider(value: $cornerRadius, in: 0...CGFloat(height / 2))
+                        .formLabel("Corner Radius")
                 }
-
+                
                 Toggle("Radius?", isOn: $drawRadius)
-
-                Divider()
-
+                
                 Toggle("Top Left", isOn: $topLeft)
                 Toggle("Top Right", isOn: $topRight)
                 Toggle("Bottom Left", isOn: $bottomLeft)
                 Toggle("Bottom Right", isOn: $bottomRight)
             }
         }
+        .padding()
         .onChange(of: drawRadius) { value in
             withAnimation {
                 cornerRadius = value ? 22 : 0
@@ -80,7 +77,6 @@ struct AdaptiveRoundedRectangleDemo: View {
         .onChange(of: bottomRight) { value in
             animateCornerChange()
         }
-        .padding()
     }
 
     // This method is a bit heavy handed in that it blindly recalculates
@@ -116,6 +112,9 @@ struct AdaptiveRoundedRectangleDemo: View {
 
 struct AdaptiveRoundedRectangleDemo_Previews: PreviewProvider {
     static var previews: some View {
-        AdaptiveRoundedRectangleDemo()
+        Group {
+            AdaptiveRoundedRectangleDemo()
+            AdaptiveRoundedRectangleDemo()
+        }
     }
 }
