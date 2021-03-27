@@ -4,7 +4,6 @@
 //
 
 import CoreData
-import Combine
 import SwiftUI
 
 struct CustomerForm: View {
@@ -17,19 +16,21 @@ struct CustomerForm: View {
             Section {
                 TextField("customer-form.first-name.label", text: $customer.firstName)
                     .formLabel("customer-form.first-name.label")
+                    .required()
 
                 TextField("customer-form.last-name.label", text: $customer.lastName)
                     .formLabel("customer-form.last-name.label")
+                    .optional()
 
                 Toggle("customer-form.is-favorite.label", isOn: $customer.isFavorite.animation())
 
                 if customer.isFavorite {
                     Label("customer-form.celebrate.label", systemImage: "heart.fill")
                 }
-            }
 
-            Section {
-                DatePicker("customer-form.birthdate.label", selection: $customer.birthDate, displayedComponents: [.date])
+                let validator = CustomerFirstNameIsNotBrianValidator(customer: customer)
+                ValidatingTextField("customer-form.first-name.label", text: $customer.lastName, validator: validator)
+                    .optional()
             }
 
             Section {
@@ -38,7 +39,6 @@ struct CustomerForm: View {
                 }
             }
         }
-        //.disabled(true)
         .navigationBarTitle(customer.firstName)
     }
 }
@@ -47,7 +47,7 @@ struct CustomerForm: View {
 struct CustomerForm_Previews : PreviewProvider {
     static var previews: some View {
         CustomerForm()
+            .environment(\.sizeCategory, .small)
     }
 }
 #endif
-

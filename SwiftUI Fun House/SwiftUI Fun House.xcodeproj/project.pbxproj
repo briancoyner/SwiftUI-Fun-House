@@ -12,6 +12,7 @@
 		5D050CE022DD6C740045F744 /* SimplePieSliceProgressDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CDF22DD6C740045F744 /* SimplePieSliceProgressDemoView.swift */; };
 		5D050CE222DD6EC10045F744 /* ProminentProgressViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CE122DD6EC10045F744 /* ProminentProgressViewDemo.swift */; };
 		5D050CE422DEAC340045F744 /* IndeterminateProgressDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CE322DEAC340045F744 /* IndeterminateProgressDemoView.swift */; };
+		5D08A61A260ECFA3006B0B7B /* BarberPoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D08A619260ECFA3006B0B7B /* BarberPoleView.swift */; };
 		5D1D493B22E01D7300B6722D /* SineWaveDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493A22E01D7300B6722D /* SineWaveDemoView.swift */; };
 		5D1D493E22E01E7100B6722D /* SineWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493D22E01E7100B6722D /* SineWaveView.swift */; };
 		5D1D494022E01EC500B6722D /* SineWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493F22E01EC500B6722D /* SineWave.swift */; };
@@ -45,6 +46,11 @@
 		5DC422B12519A3ED00B0508D /* EmptyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC422B02519A3ED00B0508D /* EmptyText.swift */; };
 		5DC422B32519A70C00B0508D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DC422B52519A70C00B0508D /* Localizable.strings */; };
 		5DC422B82519AA4000B0508D /* SensorTrackRecordActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC422B72519AA4000B0508D /* SensorTrackRecordActionView.swift */; };
+		5DD1E516260FCCBE00CB5175 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1E515260FCCBE00CB5175 /* Validator.swift */; };
+		5DD1E519260FCD6C00CB5175 /* FormFieldAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1E518260FCD6C00CB5175 /* FormFieldAnnotation.swift */; };
+		5DD1E51B260FCDA500CB5175 /* FormFieldAnnotation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1E51A260FCDA500CB5175 /* FormFieldAnnotation+Extensions.swift */; };
+		5DD1E51D260FCDD100CB5175 /* ValidatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1E51C260FCDD100CB5175 /* ValidatingTextField.swift */; };
+		5DD1E51F260FCE7500CB5175 /* TokenMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1E51E260FCE7500CB5175 /* TokenMessageView.swift */; };
 		5DDF456324B63B55005CA54F /* FormLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDF456224B63B55005CA54F /* FormLabel.swift */; };
 		5DFA925A23457890007B3055 /* CustomerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA925923457890007B3055 /* CustomerForm.swift */; };
 		5DFA925E234578AC007B3055 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA925D234578AC007B3055 /* Customer.swift */; };
@@ -56,6 +62,7 @@
 		5D050CDF22DD6C740045F744 /* SimplePieSliceProgressDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePieSliceProgressDemoView.swift; sourceTree = "<group>"; };
 		5D050CE122DD6EC10045F744 /* ProminentProgressViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProminentProgressViewDemo.swift; sourceTree = "<group>"; };
 		5D050CE322DEAC340045F744 /* IndeterminateProgressDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndeterminateProgressDemoView.swift; sourceTree = "<group>"; };
+		5D08A619260ECFA3006B0B7B /* BarberPoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberPoleView.swift; sourceTree = "<group>"; };
 		5D1D493A22E01D7300B6722D /* SineWaveDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaveDemoView.swift; sourceTree = "<group>"; };
 		5D1D493D22E01E7100B6722D /* SineWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaveView.swift; sourceTree = "<group>"; };
 		5D1D493F22E01EC500B6722D /* SineWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWave.swift; sourceTree = "<group>"; };
@@ -91,6 +98,11 @@
 		5DC422B02519A3ED00B0508D /* EmptyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyText.swift; sourceTree = "<group>"; };
 		5DC422B42519A70C00B0508D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5DC422B72519AA4000B0508D /* SensorTrackRecordActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorTrackRecordActionView.swift; sourceTree = "<group>"; };
+		5DD1E515260FCCBE00CB5175 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		5DD1E518260FCD6C00CB5175 /* FormFieldAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldAnnotation.swift; sourceTree = "<group>"; };
+		5DD1E51A260FCDA500CB5175 /* FormFieldAnnotation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormFieldAnnotation+Extensions.swift"; sourceTree = "<group>"; };
+		5DD1E51C260FCDD100CB5175 /* ValidatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatingTextField.swift; sourceTree = "<group>"; };
+		5DD1E51E260FCE7500CB5175 /* TokenMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenMessageView.swift; sourceTree = "<group>"; };
 		5DDF456224B63B55005CA54F /* FormLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabel.swift; sourceTree = "<group>"; };
 		5DFA925923457890007B3055 /* CustomerForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerForm.swift; sourceTree = "<group>"; };
 		5DFA925D234578AC007B3055 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
@@ -267,9 +279,23 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		5DD1E514260FCCAB00CB5175 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				5DD1E518260FCD6C00CB5175 /* FormFieldAnnotation.swift */,
+				5DD1E51A260FCDA500CB5175 /* FormFieldAnnotation+Extensions.swift */,
+				5DD1E51C260FCDD100CB5175 /* ValidatingTextField.swift */,
+				5DD1E515260FCCBE00CB5175 /* Validator.swift */,
+				5D08A619260ECFA3006B0B7B /* BarberPoleView.swift */,
+				5DD1E51E260FCE7500CB5175 /* TokenMessageView.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
 		5DFA92572345787C007B3055 /* Forms */ = {
 			isa = PBXGroup;
 			children = (
+				5DD1E514260FCCAB00CB5175 /* Validation */,
 				5DFA925823457885007B3055 /* Basic */,
 			);
 			path = Forms;
@@ -360,9 +386,12 @@
 				5D81BD0A22D7FED10051908E /* IndeterminateProgressRingView.swift in Sources */,
 				5D04E56E24AA83310090866B /* FunHouseApp.swift in Sources */,
 				5D1D493B22E01D7300B6722D /* SineWaveDemoView.swift in Sources */,
+				5DD1E516260FCCBE00CB5175 /* Validator.swift in Sources */,
 				5DC40CC922DAD51C0026422B /* ProgressDemoPropertiesView.swift in Sources */,
 				5DC422AE2519808F00B0508D /* ElapsedTimeView.swift in Sources */,
 				5DC422B82519AA4000B0508D /* SensorTrackRecordActionView.swift in Sources */,
+				5DD1E51F260FCE7500CB5175 /* TokenMessageView.swift in Sources */,
+				5DD1E51D260FCDD100CB5175 /* ValidatingTextField.swift in Sources */,
 				5D81BD0522D7FDF80051908E /* PieSlice.swift in Sources */,
 				5D54B5132516AC3900D86E60 /* RecordActionView.swift in Sources */,
 				5D81BD0C22D7FFAC0051908E /* AnimatableProgressShape.swift in Sources */,
@@ -370,6 +399,7 @@
 				5D050CE022DD6C740045F744 /* SimplePieSliceProgressDemoView.swift in Sources */,
 				5D81BCFD22D7EDB70051908E /* CenterCoordinateView.swift in Sources */,
 				5DC422B12519A3ED00B0508D /* EmptyText.swift in Sources */,
+				5DD1E519260FCD6C00CB5175 /* FormFieldAnnotation.swift in Sources */,
 				5D81BCFB22D7ED840051908E /* LissajousShape.swift in Sources */,
 				5D81BCF822D7ED460051908E /* NumberFormatter+ConvenienceInitializers.swift in Sources */,
 				5DFA925E234578AC007B3055 /* Customer.swift in Sources */,
@@ -379,6 +409,7 @@
 				5DC2CF2B251797A300021284 /* RecordStatusView.swift in Sources */,
 				5D54B4E9251444EB00D86E60 /* InteractiveProgressViewStyle.swift in Sources */,
 				5D37390824BA204400B28165 /* RecordActionButtonStyle.swift in Sources */,
+				5DD1E51B260FCDA500CB5175 /* FormFieldAnnotation+Extensions.swift in Sources */,
 				5DDF456324B63B55005CA54F /* FormLabel.swift in Sources */,
 				5D1D493E22E01E7100B6722D /* SineWaveView.swift in Sources */,
 				5D22EC4A2606A2900052F596 /* AdaptiveRoundedRectangle.swift in Sources */,
@@ -388,6 +419,7 @@
 				5D050CE422DEAC340045F744 /* IndeterminateProgressDemoView.swift in Sources */,
 				5D54B4EC251445A200D86E60 /* InteractiveProgressViewDemo.swift in Sources */,
 				5D050CDE22DD6A010045F744 /* ProgressDemoProperties.swift in Sources */,
+				5D08A61A260ECFA3006B0B7B /* BarberPoleView.swift in Sources */,
 				5D22EC4C2606A2EF0052F596 /* AdaptiveRoundedRectangleDemo.swift in Sources */,
 				5DFA925A23457890007B3055 /* CustomerForm.swift in Sources */,
 				5D1D494022E01EC500B6722D /* SineWave.swift in Sources */,
