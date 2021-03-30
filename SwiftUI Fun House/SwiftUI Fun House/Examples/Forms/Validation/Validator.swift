@@ -7,12 +7,12 @@ import Foundation
 import SwiftUI
 
 enum ValidationResult {
-    case ok
     case warning(LocalizedError)
     case error(LocalizedError)
 }
 
 protocol Validator {
 
-    func validate() -> ValidationResult
+    /// Implementations return a `ValidationResult` if the validation fails or `nil` if validation succeeds.
+    func validate() -> ValidationResult?
 }

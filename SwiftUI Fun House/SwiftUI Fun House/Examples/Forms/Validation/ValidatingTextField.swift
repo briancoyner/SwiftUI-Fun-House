@@ -22,7 +22,7 @@ struct ValidatingTextField: View {
         VStack(alignment: .leading, spacing: 3) {
             Group {
                 switch validator.validate() {
-                case .ok:
+                case .none:
                     Text(titleKey)
                         .foregroundColor(.accentColor)
                 case .error(let error):

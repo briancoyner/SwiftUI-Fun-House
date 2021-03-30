@@ -6,10 +6,21 @@
 import CoreData
 import SwiftUI
 
+/// - Note: trying out a bunch of different API ideas for how to handle field-level validation in a consistent way across apps that have tons of
+/// editable form sheets.
+///
+/// - Note: trying out different API techniques for annotating if a field is required or optional.
+///
+/// - Note: trying out different API ideas for how to display `TextField`s that need an additional label to denote what the value represents.
+
 struct CustomerForm: View {
     
     @StateObject
     private var customer = Customer()
+
+    private var customerFirstNameIsNotBrianValidator: Validator {
+        return CustomerFirstNameIsNotBrianValidator(customer: customer)
+    }
 
     var body: some View {
         Form {
@@ -28,9 +39,23 @@ struct CustomerForm: View {
                     Label("customer-form.celebrate.label", systemImage: "heart.fill")
                 }
 
-                let validator = CustomerFirstNameIsNotBrianValidator(customer: customer)
-                ValidatingTextField("customer-form.first-name.label", text: $customer.lastName, validator: validator)
+                ValidatingTextField("customer-form.first-name.label", text: $customer.lastName, validator: customerFirstNameIsNotBrianValidator)
+
+                TextField("First Name", text: $customer.firstName.animation())
+                    .formField("First Name", validator: customerFirstNameIsNotBrianValidator)
                     .optional()
+            }
+
+            Section {
+                FormField("customer-form.first-name.label", validator: customerFirstNameIsNotBrianValidator) { title in
+                    TextField(title, text: $customer.firstName)
+                }
+                .required()
+
+                FormField("customer-form.last-name.label") { title in
+                    TextField(title, text: $customer.lastName)
+                }
+                .optional()
             }
 
             Section {
