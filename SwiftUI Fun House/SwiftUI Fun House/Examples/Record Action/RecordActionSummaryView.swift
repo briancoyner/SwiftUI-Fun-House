@@ -47,6 +47,8 @@ private struct InternalRecordActionSummaryView<Title, Subtitle>: View where Titl
 
             subtitle
                 .font(.headline)
+                .lineLimit(1)
+                .minimumScaleFactor(0.1)
         }
         .foregroundColor(.white)
     }

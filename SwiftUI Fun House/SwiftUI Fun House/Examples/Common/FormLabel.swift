@@ -75,3 +75,4 @@ extension View where Self: FormLabelCapable {
 extension Text: FormLabelCapable { }
 extension DatePicker: FormLabelCapable { }
 extension TextField: FormLabelCapable { }
+extension Slider: FormLabelCapable { }
