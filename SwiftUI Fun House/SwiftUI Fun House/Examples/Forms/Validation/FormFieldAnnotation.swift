@@ -19,16 +19,15 @@ struct FormFieldAnnotation: View {
     }
 
     var body: some View {
-        HStack {
+        HStack(spacing: 0) {
             switch style {
             case .optional:
                 BarberPoleView(primaryColor: Color(.darkGray), secondaryColor: Color(.lightGray))
             case .required:
                 BarberPoleView(primaryColor: .blue, secondaryColor: Color.blue.opacity(0.5))
             }
-            Spacer()
         }
-        .clipped()
+        .background(Color(uiColor: .systemBackground))
     }
 
     private func color(for style: Style) -> Color {

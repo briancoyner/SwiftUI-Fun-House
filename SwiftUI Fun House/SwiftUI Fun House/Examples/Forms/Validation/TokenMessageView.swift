@@ -11,7 +11,7 @@ struct TokenMessageView: View {
     let message: String
 
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             Text(titleKey)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
@@ -25,6 +25,7 @@ struct TokenMessageView: View {
 
             Spacer()
         }
+        .font(.footnote)
         .background(
             HStack {
                 AdaptiveRoundedRectangle(byRoundingCorners: .right, cornerRadius: 4)

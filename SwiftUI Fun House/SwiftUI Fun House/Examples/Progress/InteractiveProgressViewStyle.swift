@@ -6,7 +6,7 @@
 import SwiftUI
 
 /// A custom `ProgressViewStyle` that displays a progress ring around an inner ring. For demo purposes,
-/// the view displays a rounded rectangle represening a "stop button".
+/// the view displays a rounded rectangle representing a "stop button".
 struct InteractiveProgressViewStyle: ProgressViewStyle {
 
     func makeBody(configuration: Configuration) -> some View {

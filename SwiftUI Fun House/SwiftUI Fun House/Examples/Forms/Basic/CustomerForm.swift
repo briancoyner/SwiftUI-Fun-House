@@ -39,11 +39,13 @@ struct CustomerForm: View {
                     Label("customer-form.celebrate.label", systemImage: "heart.fill")
                 }
 
-                ValidatingTextField("customer-form.first-name.label", text: $customer.lastName, validator: customerFirstNameIsNotBrianValidator)
-
                 TextField("First Name", text: $customer.firstName.animation())
                     .formField("First Name", validator: customerFirstNameIsNotBrianValidator)
                     .optional()
+            }
+
+            Section {
+                ValidatingTextField("customer-form.first-name.label", text: $customer.firstName, validator: customerFirstNameIsNotBrianValidator)
             }
 
             Section {
