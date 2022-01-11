@@ -17,13 +17,13 @@ struct LissajousDemoView: View {
     @State private var b: Double = 2
     
     var body: some View {
-        VStack {
+        Form {
+                Section {
+                    LissajousView(amplitude: amplitude, a: a, b: b, delta: delta)
+                        .frame(idealHeight: 200)
+                }
+//                    .padding([.top, .bottom])
 
-            LissajousView(amplitude: amplitude, a: a, b: b, delta: delta)
-                .frame(maxHeight: 180)
-                .padding([.top, .bottom])
-
-            Form {
                 Section(header: Text("Amplitude")) {
                     Slider(value: $amplitude.animation(), in: 22...84, step: 1)
                 }
@@ -42,8 +42,9 @@ struct LissajousDemoView: View {
                     }
                 }
             }
-        }
+        
         .navigationTitle("Lissajous")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
