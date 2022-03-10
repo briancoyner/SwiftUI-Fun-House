@@ -29,17 +29,18 @@ struct AdaptiveRoundedRectangleDemo: View {
     private var height: CGFloat = 100
 
     var body: some View {
-        ScrollView {
-            VStack {
-                AdaptiveRoundedRectangle(byRoundingCorners: corners, cornerRadius: cornerRadius)
-                    .fill(Color.blue)
-                    .frame(height: height, alignment: .center)
+        List {
+            AdaptiveRoundedRectangle(byRoundingCorners: corners, cornerRadius: cornerRadius)
+                .fill(Color.blue)
+                .frame(height: height, alignment: .center)
+                .padding(.horizontal)
+
+            AdaptiveRoundedRectangle(byRoundingCorners: corners, cornerRadius: cornerRadius)
+                .stroke(Color.blue)
+                .frame(height: height, alignment: .center)
+                .padding(.horizontal)
                 
-                AdaptiveRoundedRectangle(byRoundingCorners: corners, cornerRadius: cornerRadius)
-                    .stroke(Color.blue)
-                    .frame(height: height, alignment: .center)
-                
-                Spacer()
+            Section {
                 
                 VStack(alignment: .leading, spacing: 0) {
                     Slider(value: $height, in: 44...CGFloat(100))
