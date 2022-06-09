@@ -10,7 +10,7 @@ struct BarberPoleView: View {
             let stripeHeight: CGFloat = context.size.height / 10
             let rows = Int(context.size.height / stripeHeight)
             VStack(spacing: 0) {
-                ForEach(0..<rows+2) { index in
+                ForEach(0..<rows+2, id: \.self) { index in
                     let color = index % 2 == 0 ? primaryColor : secondaryColor
                     Rectangle()
                         .fill(color)

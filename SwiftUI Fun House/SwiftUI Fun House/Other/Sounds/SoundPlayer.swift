@@ -13,8 +13,6 @@ public class SoundPlayer {
     }
 
     public static func play(_ identifier: SoundIdentifier) {
-        DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async(execute: {
-            AudioServicesPlaySystemSound(identifier.rawValue)
-        })
+        AudioServicesPlaySystemSoundWithCompletion(identifier.rawValue, nil)
     }
 }

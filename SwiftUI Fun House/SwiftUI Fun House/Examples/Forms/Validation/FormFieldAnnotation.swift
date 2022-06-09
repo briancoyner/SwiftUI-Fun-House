@@ -7,11 +7,6 @@ import SwiftUI
 
 struct FormFieldAnnotation: View {
 
-    enum Style {
-        case required
-        case optional
-    }
-
     let style: Style
 
     init(style: Style) {
@@ -37,5 +32,12 @@ struct FormFieldAnnotation: View {
         case .required:
             return .blue
         }
+    }
+}
+
+extension FormFieldAnnotation {
+    enum Style {
+        case required
+        case optional
     }
 }

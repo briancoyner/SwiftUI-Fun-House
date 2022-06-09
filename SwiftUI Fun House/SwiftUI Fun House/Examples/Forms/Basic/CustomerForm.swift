@@ -45,10 +45,6 @@ struct CustomerForm: View {
             }
 
             Section {
-                ValidatingTextField("customer-form.first-name.label", text: $customer.firstName, validator: customerFirstNameIsNotBrianValidator)
-            }
-
-            Section {
                 FormField("customer-form.first-name.label", validator: customerFirstNameIsNotBrianValidator) { title in
                     TextField(title, text: $customer.firstName)
                 }

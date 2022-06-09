@@ -25,7 +25,7 @@ struct TokenMessageView: View {
 
             Spacer()
         }
-        .font(.footnote)
+        .font(.subheadline)
         .background(
             HStack {
                 AdaptiveRoundedRectangle(byRoundingCorners: .right, cornerRadius: 4)

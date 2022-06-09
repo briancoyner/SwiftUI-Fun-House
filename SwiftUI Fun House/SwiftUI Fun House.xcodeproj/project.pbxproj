@@ -24,6 +24,9 @@
 		5D54B4EC251445A200D86E60 /* InteractiveProgressViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54B4EB251445A200D86E60 /* InteractiveProgressViewDemo.swift */; };
 		5D54B5132516AC3900D86E60 /* RecordActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54B5122516AC3900D86E60 /* RecordActionView.swift */; };
 		5D54B5172516B19E00D86E60 /* RecordActionSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54B5162516B19E00D86E60 /* RecordActionSummaryView.swift */; };
+		5D56099C28517A3200004B22 /* FormLabelContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56099B28517A3200004B22 /* FormLabelContentStyle.swift */; };
+		5D56099E28517A6800004B22 /* FormLabelCapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56099D28517A6800004B22 /* FormLabelCapable.swift */; };
+		5D5609A028517BBD00004B22 /* View+FormLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56099F28517BBD00004B22 /* View+FormLabel.swift */; };
 		5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCE422D7EBAE0051908E /* MenuView.swift */; };
 		5D81BCE722D7EBAF0051908E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCE622D7EBAF0051908E /* Assets.xcassets */; };
 		5D81BCEA22D7EBAF0051908E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCE922D7EBAF0051908E /* Preview Assets.xcassets */; };
@@ -74,6 +77,9 @@
 		5D54B4EB251445A200D86E60 /* InteractiveProgressViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveProgressViewDemo.swift; sourceTree = "<group>"; };
 		5D54B5122516AC3900D86E60 /* RecordActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordActionView.swift; sourceTree = "<group>"; };
 		5D54B5162516B19E00D86E60 /* RecordActionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordActionSummaryView.swift; sourceTree = "<group>"; };
+		5D56099B28517A3200004B22 /* FormLabelContentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelContentStyle.swift; sourceTree = "<group>"; };
+		5D56099D28517A6800004B22 /* FormLabelCapable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelCapable.swift; sourceTree = "<group>"; };
+		5D56099F28517BBD00004B22 /* View+FormLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+FormLabel.swift"; sourceTree = "<group>"; };
 		5D81BCDD22D7EBAE0051908E /* SwiftUI Fun House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Fun House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D81BCE422D7EBAE0051908E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		5D81BCE622D7EBAF0051908E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,7 +128,6 @@
 		5D04E56F24AA95D40090866B /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				5DDF456224B63B55005CA54F /* FormLabel.swift */,
 				5DC422B02519A3ED00B0508D /* EmptyText.swift */,
 			);
 			path = Common;
@@ -159,6 +164,17 @@
 				5DC422B72519AA4000B0508D /* SensorTrackRecordActionView.swift */,
 			);
 			path = "Record Action";
+			sourceTree = "<group>";
+		};
+		5D56099A28517A2200004B22 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5DDF456224B63B55005CA54F /* FormLabel.swift */,
+				5D56099B28517A3200004B22 /* FormLabelContentStyle.swift */,
+				5D56099D28517A6800004B22 /* FormLabelCapable.swift */,
+				5D56099F28517BBD00004B22 /* View+FormLabel.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		5D81BCD422D7EBAE0051908E = {
@@ -235,11 +251,11 @@
 			children = (
 				5D22EC482606A27B0052F596 /* Adaptive Rounded Rectangle */,
 				5D37390624BA203200B28165 /* Record Action */,
-				5D04E56F24AA95D40090866B /* Common */,
 				5D1D493922E01D5A00B6722D /* Sine Wave */,
 				5D81BCF922D7ED610051908E /* Lissajous */,
 				5DFA92572345787C007B3055 /* Forms */,
 				5D81BD0622D7FE6E0051908E /* Progress */,
+				5D04E56F24AA95D40090866B /* Common */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -295,6 +311,7 @@
 		5DFA92572345787C007B3055 /* Forms */ = {
 			isa = PBXGroup;
 			children = (
+				5D56099A28517A2200004B22 /* Common */,
 				5DD1E514260FCCAB00CB5175 /* Validation */,
 				5DFA925823457885007B3055 /* Basic */,
 			);
@@ -389,6 +406,7 @@
 				5DD1E516260FCCBE00CB5175 /* Validator.swift in Sources */,
 				5DC40CC922DAD51C0026422B /* ProgressDemoPropertiesView.swift in Sources */,
 				5DC422AE2519808F00B0508D /* ElapsedTimeView.swift in Sources */,
+				5D56099C28517A3200004B22 /* FormLabelContentStyle.swift in Sources */,
 				5DC422B82519AA4000B0508D /* SensorTrackRecordActionView.swift in Sources */,
 				5DD1E51F260FCE7500CB5175 /* TokenMessageView.swift in Sources */,
 				5DD1E51D260FCDD100CB5175 /* ValidatingTextField.swift in Sources */,
@@ -414,6 +432,7 @@
 				5D1D493E22E01E7100B6722D /* SineWaveView.swift in Sources */,
 				5D22EC4A2606A2900052F596 /* AdaptiveRoundedRectangle.swift in Sources */,
 				5D37390A24BA209A00B28165 /* RecordActionDemoView.swift in Sources */,
+				5D5609A028517BBD00004B22 /* View+FormLabel.swift in Sources */,
 				5D81BD0122D7EE040051908E /* LissajousDemoView.swift in Sources */,
 				5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */,
 				5D050CE422DEAC340045F744 /* IndeterminateProgressDemoView.swift in Sources */,
@@ -421,6 +440,7 @@
 				5D050CDE22DD6A010045F744 /* ProgressDemoProperties.swift in Sources */,
 				5D08A61A260ECFA3006B0B7B /* BarberPoleView.swift in Sources */,
 				5D22EC4C2606A2EF0052F596 /* AdaptiveRoundedRectangleDemo.swift in Sources */,
+				5D56099E28517A6800004B22 /* FormLabelCapable.swift in Sources */,
 				5DFA925A23457890007B3055 /* CustomerForm.swift in Sources */,
 				5D1D494022E01EC500B6722D /* SineWave.swift in Sources */,
 				5D54B5172516B19E00D86E60 /* RecordActionSummaryView.swift in Sources */,
@@ -573,7 +593,7 @@
 				DEVELOPMENT_TEAM = KC5B683642;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI Fun House/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -595,7 +615,7 @@
 				DEVELOPMENT_TEAM = KC5B683642;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI Fun House/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

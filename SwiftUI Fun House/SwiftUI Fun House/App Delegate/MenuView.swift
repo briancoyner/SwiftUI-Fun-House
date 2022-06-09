@@ -7,7 +7,7 @@ import SwiftUI
 
 struct MenuView : View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 Section(header: Text("Animatable Data")) {
                     NavigationLink("Sine Wave", destination: SineWaveDemoView())
@@ -28,7 +28,8 @@ struct MenuView : View {
                 Section(header: Text("Forms")) {
                     NavigationLink("Simple Customer Form", destination: CustomerForm())
                 }
-            }.navigationBarTitle("SwiftUI Fun House")
+            }
+            .navigationBarTitle("SwiftUI Fun House")
         }
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
