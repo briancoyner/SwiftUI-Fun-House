@@ -29,7 +29,7 @@ struct MenuView : View {
                     NavigationLink("Simple Customer Form", destination: CustomerForm())
                 }
             }
-            .navigationBarTitle("SwiftUI Fun House")
+            .navigationTitle("SwiftUI Fun House")
         }
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }

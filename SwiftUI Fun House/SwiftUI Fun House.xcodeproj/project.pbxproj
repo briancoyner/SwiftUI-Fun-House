@@ -30,8 +30,6 @@
 		5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCE422D7EBAE0051908E /* MenuView.swift */; };
 		5D81BCE722D7EBAF0051908E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCE622D7EBAF0051908E /* Assets.xcassets */; };
 		5D81BCEA22D7EBAF0051908E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCE922D7EBAF0051908E /* Preview Assets.xcassets */; };
-		5D81BCED22D7EBAF0051908E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCEB22D7EBAF0051908E /* LaunchScreen.storyboard */; };
-		5D81BCF622D7ED160051908E /* StringInterpolation+NumberFormatterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCF522D7ED160051908E /* StringInterpolation+NumberFormatterStyle.swift */; };
 		5D81BCF822D7ED460051908E /* NumberFormatter+ConvenienceInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCF722D7ED460051908E /* NumberFormatter+ConvenienceInitializers.swift */; };
 		5D81BCFB22D7ED840051908E /* LissajousShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCFA22D7ED840051908E /* LissajousShape.swift */; };
 		5D81BCFD22D7EDB70051908E /* CenterCoordinateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCFC22D7EDB70051908E /* CenterCoordinateView.swift */; };
@@ -84,9 +82,7 @@
 		5D81BCE422D7EBAE0051908E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		5D81BCE622D7EBAF0051908E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D81BCE922D7EBAF0051908E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5D81BCEC22D7EBAF0051908E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D81BCEE22D7EBAF0051908E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D81BCF522D7ED160051908E /* StringInterpolation+NumberFormatterStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringInterpolation+NumberFormatterStyle.swift"; sourceTree = "<group>"; };
 		5D81BCF722D7ED460051908E /* NumberFormatter+ConvenienceInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+ConvenienceInitializers.swift"; sourceTree = "<group>"; };
 		5D81BCFA22D7ED840051908E /* LissajousShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LissajousShape.swift; sourceTree = "<group>"; };
 		5D81BCFC22D7EDB70051908E /* CenterCoordinateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterCoordinateView.swift; sourceTree = "<group>"; };
@@ -201,7 +197,6 @@
 				5DC2CF322519570F00021284 /* Other */,
 				5D81BCF422D7ECE30051908E /* Foundation Extensions */,
 				5D81BCE622D7EBAF0051908E /* Assets.xcassets */,
-				5D81BCEB22D7EBAF0051908E /* LaunchScreen.storyboard */,
 				5D81BCEE22D7EBAF0051908E /* Info.plist */,
 				5DC422B52519A70C00B0508D /* Localizable.strings */,
 				5D81BCE822D7EBAF0051908E /* Preview Content */,
@@ -220,7 +215,6 @@
 		5D81BCF422D7ECE30051908E /* Foundation Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5D81BCF522D7ED160051908E /* StringInterpolation+NumberFormatterStyle.swift */,
 				5D81BCF722D7ED460051908E /* NumberFormatter+ConvenienceInitializers.swift */,
 			);
 			path = "Foundation Extensions";
@@ -385,7 +379,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D81BCED22D7EBAF0051908E /* LaunchScreen.storyboard in Resources */,
 				5DC422B32519A70C00B0508D /* Localizable.strings in Resources */,
 				5D81BCEA22D7EBAF0051908E /* Preview Assets.xcassets in Resources */,
 				5D81BCE722D7EBAF0051908E /* Assets.xcassets in Resources */,
@@ -413,7 +406,6 @@
 				5D81BD0522D7FDF80051908E /* PieSlice.swift in Sources */,
 				5D54B5132516AC3900D86E60 /* RecordActionView.swift in Sources */,
 				5D81BD0C22D7FFAC0051908E /* AnimatableProgressShape.swift in Sources */,
-				5D81BCF622D7ED160051908E /* StringInterpolation+NumberFormatterStyle.swift in Sources */,
 				5D050CE022DD6C740045F744 /* SimplePieSliceProgressDemoView.swift in Sources */,
 				5D81BCFD22D7EDB70051908E /* CenterCoordinateView.swift in Sources */,
 				5DC422B12519A3ED00B0508D /* EmptyText.swift in Sources */,
@@ -451,14 +443,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5D81BCEB22D7EBAF0051908E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D81BCEC22D7EBAF0051908E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		5DC422B52519A70C00B0508D /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -598,9 +582,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				OTHER_SWIFT_FLAGS = "-warn-concurrency";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.SwiftUI-Fun-House";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -620,9 +609,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				OTHER_SWIFT_FLAGS = "-warn-concurrency";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.SwiftUI-Fun-House";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

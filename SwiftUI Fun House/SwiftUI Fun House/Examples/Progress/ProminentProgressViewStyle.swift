@@ -12,7 +12,7 @@ import SwiftUI
 struct ProminentProgressViewStyle: ProgressViewStyle {
 
     func makeBody(configuration: Configuration) -> some View {
-        let value = CGFloat(configuration.fractionCompleted ?? 0)
+        let value = Double(configuration.fractionCompleted ?? 0)
         return GeometryReader { context in
             ZStack {
                 Circle()
@@ -23,8 +23,8 @@ struct ProminentProgressViewStyle: ProgressViewStyle {
                     .rotationEffect(.degrees(-90))
             }
             .overlay(
-                Text(verbatim: "\(format: value, using: .percent)")
-                    .font(.system(size: max(context.size.width * 0.2, UIFont.smallSystemFontSize), design: Font.Design.monospaced))
+                Text(verbatim: value.formatted(.percent))
+                    .font(.system(size: max(context.size.width * 0.2, UIFont.smallSystemFontSize), design: .monospaced))
             )
         }
     }

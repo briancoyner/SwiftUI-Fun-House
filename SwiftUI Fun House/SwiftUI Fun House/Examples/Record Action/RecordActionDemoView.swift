@@ -37,7 +37,7 @@ struct RecordActionDemoView: View {
         SensorTrackRecordActionView(state: $state)
             .edgesIgnoringSafeArea(.all)
             .toolbar {
-                ToolbarItem(placement: .bottomBar) {
+                ToolbarItem(placement: .status) {
                     Picker("State Picker", selection: $state.animation(.spring())) {
                         ForEach(RecordActionView.State.allCases, id: \.self) {
                             Text($0.label)

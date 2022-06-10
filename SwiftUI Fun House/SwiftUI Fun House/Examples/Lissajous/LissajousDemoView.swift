@@ -34,17 +34,18 @@ struct LissajousDemoView: View {
 
                 Section {
                     Stepper(value: $a.animation(), in: 0...10, step: 1.0) {
-                        Text(verbatim: "A (\(format: a, using: .decimal))")
+                        Text(verbatim: "A \(a.formatted())")
                     }
 
                     Stepper(value: $b.animation(), in: 0...10, step: 1.0) {
-                        Text(verbatim: "B (\(format: b, using: .decimal))")
+                        Text(verbatim: "B \(b.formatted())")
                     }
                 }
             }
         
         .navigationTitle("Lissajous")
-        .navigationBarTitleDisplayMode(.inline)
+
+//        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -62,7 +62,7 @@ struct CustomerForm: View {
                 }
             }
         }
-        .navigationBarTitle(customer.firstName)
+        .navigationTitle(customer.firstName)
     }
 }
 
