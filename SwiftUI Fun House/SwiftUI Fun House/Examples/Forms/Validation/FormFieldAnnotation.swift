@@ -22,7 +22,7 @@ struct FormFieldAnnotation: View {
                 BarberPoleView(primaryColor: .blue, secondaryColor: Color.blue.opacity(0.5))
             }
         }
-        .background(.secondary)
+        .background(Color(.secondarySystemGroupedBackground))
     }
 
     private func color(for style: Style) -> Color {

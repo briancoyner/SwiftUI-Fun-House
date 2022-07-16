@@ -13,6 +13,8 @@ extension View where Self: FormLabelCapable {
     /// Wraps the view in a leading aligned `VStack` with a text label sitting above the view.
     /// This is helpful when form-based views display lots of values whose meaning requires a label.
     ///
+    /// Internally this uses a `LabeledContent` view using the `FormLabelContentStyle`.
+    ///
     /// - Parameters:
     ///   - titleKey: The key for the localized title of the text field, describing its purpose.
     ///   - tableName: The name of the string table to search. If `nil`, use the  table in the `Localizable.strings` file.
@@ -23,8 +25,6 @@ extension View where Self: FormLabelCapable {
             self
         } label: {
             Text(titleKey, tableName: tableName, bundle: bundle)
-                .font(.subheadline)
-                .foregroundColor(.secondary)
         }
         .labeledContentStyle(FormLabelContentStyle())
     }

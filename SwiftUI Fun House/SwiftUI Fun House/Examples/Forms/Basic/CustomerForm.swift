@@ -69,8 +69,9 @@ struct CustomerForm: View {
 #if DEBUG
 struct CustomerForm_Previews : PreviewProvider {
     static var previews: some View {
-        CustomerForm()
-            .environment(\.sizeCategory, .small)
+        NavigationStack {
+            CustomerForm()
+        }
     }
 }
 #endif
