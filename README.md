@@ -10,6 +10,14 @@ A few demos showing techniques for animating `Shape`s using `AnimatablePair`s.
 - [Sine](https://mathworld.wolfram.com/Sine.html) wave
 - [Lissajous](https://mathworld.wolfram.com/LissajousCurve.html) curve
 
+## Gestures
+
+Demos showing techniques for handling gestures.
+
+### Some fun examples
+- [Three Point Circle](https://www.johndcook.com/blog/2023/06/18/circle-through-three-points)
+
+![Three Point Circle](ThreePointCircle.gif)
 
 ## Circular Progress Views
 
