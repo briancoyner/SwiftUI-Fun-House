@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum CustomerError: LocalizedError {
     case firstNameIsNotBrian
@@ -35,6 +36,7 @@ struct CustomerFirstNameIsNotBrianValidator: Validator {
     }
 }
 
+@MainActor
 final class Customer: ObservableObject {
     @Published var firstName: String = "Brian" {
         didSet {

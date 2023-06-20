@@ -61,21 +61,21 @@ struct AdaptiveRoundedRectangleDemo: View {
             }
         }
         .padding()
-        .onChange(of: drawRadius) { value in
+        .onChange(of: drawRadius) { _, value in
             withAnimation {
                 cornerRadius = value ? 22 : 0
             }
         }
-        .onChange(of: topLeft) { value in
+        .onChange(of: topLeft) { _, value in
             animateCornerChange()
         }
-        .onChange(of: topRight) { value in
+        .onChange(of: topRight) { _, value in
             animateCornerChange()
         }
-        .onChange(of: bottomLeft) { value in
+        .onChange(of: bottomLeft) { _, value in
             animateCornerChange()
         }
-        .onChange(of: bottomRight) { value in
+        .onChange(of: bottomRight) { _, value in
             animateCornerChange()
         }
     }

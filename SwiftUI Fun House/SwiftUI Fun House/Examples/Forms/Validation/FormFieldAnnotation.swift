@@ -12,6 +12,9 @@ struct FormFieldAnnotation: View {
     init(style: Style) {
         self.style = style
     }
+}
+
+extension FormFieldAnnotation {
 
     var body: some View {
         HStack(spacing: 0) {

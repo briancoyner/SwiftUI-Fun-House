@@ -11,6 +11,7 @@ enum ValidationResult {
     case error(LocalizedError)
 }
 
+@MainActor
 protocol Validator {
 
     /// Implementations return a `ValidationResult` if the validation fails or `nil` if validation succeeds.

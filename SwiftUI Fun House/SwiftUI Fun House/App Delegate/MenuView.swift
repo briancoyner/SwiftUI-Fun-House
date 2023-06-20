@@ -13,6 +13,9 @@ struct MenuView : View {
                     NavigationLink("Sine Wave", destination: SineWaveDemoView())
                     NavigationLink("Lissajous", destination: LissajousDemoView())
                 }
+                Section(header: Text("Math")) {
+                    NavigationLink("Three Point Circle", destination: ThreePointCircleDemo())
+                }
                 Section(header: Text("Circular Progress Views")) {
                     NavigationLink("Simple `Circle`", destination: SimpleCircleProgressDemoView())
                     NavigationLink("Simple `PieSlice`", destination: SimplePieSliceProgressDemoView())

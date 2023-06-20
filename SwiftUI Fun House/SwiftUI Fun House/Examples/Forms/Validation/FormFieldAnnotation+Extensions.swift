@@ -5,6 +5,7 @@
 
 import SwiftUI
 
+/// The use of `listRowBackground` to help anchor the "annotation bar" to the leading edge of the cell works, but then selection/ highlighting is lost.
 extension View {
 
     func annotated(as style: FormFieldAnnotation.Style) -> some View {

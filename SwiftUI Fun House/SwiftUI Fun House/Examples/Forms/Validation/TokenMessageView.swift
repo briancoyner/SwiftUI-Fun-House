@@ -9,6 +9,9 @@ struct TokenMessageView: View {
 
     let titleKey: LocalizedStringKey
     let message: String
+}
+
+extension TokenMessageView {
 
     var body: some View {
         HStack(alignment: .top) {

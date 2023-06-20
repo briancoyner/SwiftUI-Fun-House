@@ -13,6 +13,7 @@
 		5D050CE222DD6EC10045F744 /* ProminentProgressViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CE122DD6EC10045F744 /* ProminentProgressViewDemo.swift */; };
 		5D050CE422DEAC340045F744 /* IndeterminateProgressDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D050CE322DEAC340045F744 /* IndeterminateProgressDemoView.swift */; };
 		5D08A61A260ECFA3006B0B7B /* BarberPoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D08A619260ECFA3006B0B7B /* BarberPoleView.swift */; };
+		5D152E122A407A9700A5FA5C /* ThreePointCircleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D152E112A407A9700A5FA5C /* ThreePointCircleDemo.swift */; };
 		5D1D493B22E01D7300B6722D /* SineWaveDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493A22E01D7300B6722D /* SineWaveDemoView.swift */; };
 		5D1D493E22E01E7100B6722D /* SineWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493D22E01E7100B6722D /* SineWaveView.swift */; };
 		5D1D494022E01EC500B6722D /* SineWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D493F22E01EC500B6722D /* SineWave.swift */; };
@@ -20,6 +21,7 @@
 		5D22EC4C2606A2EF0052F596 /* AdaptiveRoundedRectangleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D22EC4B2606A2EF0052F596 /* AdaptiveRoundedRectangleDemo.swift */; };
 		5D37390824BA204400B28165 /* RecordActionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37390724BA204400B28165 /* RecordActionButtonStyle.swift */; };
 		5D37390A24BA209A00B28165 /* RecordActionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37390924BA209A00B28165 /* RecordActionDemoView.swift */; };
+		5D4D3F392A41422D00B8D7BA /* ThreePointCircleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D3F382A41422D00B8D7BA /* ThreePointCircleModel.swift */; };
 		5D54B4E9251444EB00D86E60 /* InteractiveProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54B4E8251444EB00D86E60 /* InteractiveProgressViewStyle.swift */; };
 		5D54B4EC251445A200D86E60 /* InteractiveProgressViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54B4EB251445A200D86E60 /* InteractiveProgressViewDemo.swift */; };
 		5D54B5132516AC3900D86E60 /* RecordActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54B5122516AC3900D86E60 /* RecordActionView.swift */; };
@@ -27,6 +29,7 @@
 		5D56099C28517A3200004B22 /* FormLabelContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56099B28517A3200004B22 /* FormLabelContentStyle.swift */; };
 		5D56099E28517A6800004B22 /* FormLabelCapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56099D28517A6800004B22 /* FormLabelCapable.swift */; };
 		5D5609A028517BBD00004B22 /* View+FormLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56099F28517BBD00004B22 /* View+FormLabel.swift */; };
+		5D73E8A72A41D25800A45DB8 /* AdaptiveDatePickerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D73E8A62A41D25800A45DB8 /* AdaptiveDatePickerStyle.swift */; };
 		5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCE422D7EBAE0051908E /* MenuView.swift */; };
 		5D81BCE722D7EBAF0051908E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCE622D7EBAF0051908E /* Assets.xcassets */; };
 		5D81BCEA22D7EBAF0051908E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCE922D7EBAF0051908E /* Preview Assets.xcassets */; };
@@ -64,6 +67,7 @@
 		5D050CE122DD6EC10045F744 /* ProminentProgressViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProminentProgressViewDemo.swift; sourceTree = "<group>"; };
 		5D050CE322DEAC340045F744 /* IndeterminateProgressDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndeterminateProgressDemoView.swift; sourceTree = "<group>"; };
 		5D08A619260ECFA3006B0B7B /* BarberPoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberPoleView.swift; sourceTree = "<group>"; };
+		5D152E112A407A9700A5FA5C /* ThreePointCircleDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePointCircleDemo.swift; sourceTree = "<group>"; };
 		5D1D493A22E01D7300B6722D /* SineWaveDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaveDemoView.swift; sourceTree = "<group>"; };
 		5D1D493D22E01E7100B6722D /* SineWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaveView.swift; sourceTree = "<group>"; };
 		5D1D493F22E01EC500B6722D /* SineWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWave.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 		5D22EC4B2606A2EF0052F596 /* AdaptiveRoundedRectangleDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveRoundedRectangleDemo.swift; sourceTree = "<group>"; };
 		5D37390724BA204400B28165 /* RecordActionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordActionButtonStyle.swift; sourceTree = "<group>"; };
 		5D37390924BA209A00B28165 /* RecordActionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordActionDemoView.swift; sourceTree = "<group>"; };
+		5D4D3F382A41422D00B8D7BA /* ThreePointCircleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePointCircleModel.swift; sourceTree = "<group>"; };
 		5D54B4E8251444EB00D86E60 /* InteractiveProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveProgressViewStyle.swift; sourceTree = "<group>"; };
 		5D54B4EB251445A200D86E60 /* InteractiveProgressViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveProgressViewDemo.swift; sourceTree = "<group>"; };
 		5D54B5122516AC3900D86E60 /* RecordActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordActionView.swift; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		5D56099B28517A3200004B22 /* FormLabelContentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelContentStyle.swift; sourceTree = "<group>"; };
 		5D56099D28517A6800004B22 /* FormLabelCapable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelCapable.swift; sourceTree = "<group>"; };
 		5D56099F28517BBD00004B22 /* View+FormLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+FormLabel.swift"; sourceTree = "<group>"; };
+		5D73E8A62A41D25800A45DB8 /* AdaptiveDatePickerStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveDatePickerStyle.swift; sourceTree = "<group>"; };
 		5D81BCDD22D7EBAE0051908E /* SwiftUI Fun House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Fun House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D81BCE422D7EBAE0051908E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		5D81BCE622D7EBAF0051908E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +99,7 @@
 		5D81BD0B22D7FFAC0051908E /* AnimatableProgressShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableProgressShape.swift; sourceTree = "<group>"; };
 		5D81BD0D22D7FFE80051908E /* ProminentProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProminentProgressViewStyle.swift; sourceTree = "<group>"; };
 		5D81BD0F22D800940051908E /* SimpleCircleProgressDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCircleProgressDemoView.swift; sourceTree = "<group>"; };
+		5DA0168529D4867000ED98C1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		5DC2CF2A251797A300021284 /* RecordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordStatusView.swift; sourceTree = "<group>"; };
 		5DC2CF2E251954FF00021284 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		5DC40CC822DAD51C0026422B /* ProgressDemoPropertiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemoPropertiesView.swift; sourceTree = "<group>"; };
@@ -127,6 +134,15 @@
 				5DC422B02519A3ED00B0508D /* EmptyText.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		5D152E102A407A7000A5FA5C /* ThreePointCircleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5D152E112A407A9700A5FA5C /* ThreePointCircleDemo.swift */,
+				5D4D3F382A41422D00B8D7BA /* ThreePointCircleModel.swift */,
+			);
+			path = ThreePointCircleDemo;
 			sourceTree = "<group>";
 		};
 		5D1D493922E01D5A00B6722D /* Sine Wave */ = {
@@ -169,6 +185,7 @@
 				5D56099B28517A3200004B22 /* FormLabelContentStyle.swift */,
 				5D56099D28517A6800004B22 /* FormLabelCapable.swift */,
 				5D56099F28517BBD00004B22 /* View+FormLabel.swift */,
+				5D73E8A62A41D25800A45DB8 /* AdaptiveDatePickerStyle.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -178,6 +195,7 @@
 			children = (
 				5D81BCDF22D7EBAE0051908E /* SwiftUI Fun House */,
 				5D81BCDE22D7EBAE0051908E /* Products */,
+				5DA0168429D4867000ED98C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -243,6 +261,7 @@
 		5D81BD0322D7FDD40051908E /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				5D152E102A407A7000A5FA5C /* ThreePointCircleDemo */,
 				5D22EC482606A27B0052F596 /* Adaptive Rounded Rectangle */,
 				5D37390624BA203200B28165 /* Record Action */,
 				5D1D493922E01D5A00B6722D /* Sine Wave */,
@@ -271,6 +290,14 @@
 				5D54B4EB251445A200D86E60 /* InteractiveProgressViewDemo.swift */,
 			);
 			path = Progress;
+			sourceTree = "<group>";
+		};
+		5DA0168429D4867000ED98C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DA0168529D4867000ED98C1 /* libc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5DC2CF2D251954F200021284 /* Sounds */ = {
@@ -347,8 +374,9 @@
 		5D81BCD522D7EBAE0051908E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "Brian Coyner";
 				TargetAttributes = {
 					5D81BCDC22D7EBAE0051908E = {
@@ -411,11 +439,13 @@
 				5DC422B12519A3ED00B0508D /* EmptyText.swift in Sources */,
 				5DD1E519260FCD6C00CB5175 /* FormFieldAnnotation.swift in Sources */,
 				5D81BCFB22D7ED840051908E /* LissajousShape.swift in Sources */,
+				5D73E8A72A41D25800A45DB8 /* AdaptiveDatePickerStyle.swift in Sources */,
 				5D81BCF822D7ED460051908E /* NumberFormatter+ConvenienceInitializers.swift in Sources */,
 				5DFA925E234578AC007B3055 /* Customer.swift in Sources */,
 				5DC2CF2F251954FF00021284 /* SoundPlayer.swift in Sources */,
 				5D050CE222DD6EC10045F744 /* ProminentProgressViewDemo.swift in Sources */,
 				5D81BCFF22D7EDD50051908E /* LissajousView.swift in Sources */,
+				5D152E122A407A9700A5FA5C /* ThreePointCircleDemo.swift in Sources */,
 				5DC2CF2B251797A300021284 /* RecordStatusView.swift in Sources */,
 				5D54B4E9251444EB00D86E60 /* InteractiveProgressViewStyle.swift in Sources */,
 				5D37390824BA204400B28165 /* RecordActionButtonStyle.swift in Sources */,
@@ -424,6 +454,7 @@
 				5D1D493E22E01E7100B6722D /* SineWaveView.swift in Sources */,
 				5D22EC4A2606A2900052F596 /* AdaptiveRoundedRectangle.swift in Sources */,
 				5D37390A24BA209A00B28165 /* RecordActionDemoView.swift in Sources */,
+				5D4D3F392A41422D00B8D7BA /* ThreePointCircleModel.swift in Sources */,
 				5D5609A028517BBD00004B22 /* View+FormLabel.swift in Sources */,
 				5D81BD0122D7EE040051908E /* LissajousDemoView.swift in Sources */,
 				5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */,
@@ -458,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -491,6 +523,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -518,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -551,6 +585,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -577,7 +612,7 @@
 				DEVELOPMENT_TEAM = KC5B683642;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI Fun House/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,7 +639,7 @@
 				DEVELOPMENT_TEAM = KC5B683642;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI Fun House/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

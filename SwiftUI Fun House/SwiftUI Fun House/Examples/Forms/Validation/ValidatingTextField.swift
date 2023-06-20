@@ -17,7 +17,11 @@ struct ValidatingTextField: View {
         self.binding = text
         self.validator = validator
     }
+}
 
+extension ValidatingTextField {
+
+    @MainActor
     var body: some View {
         VStack(alignment: .leading, spacing: 3) {
             Group {

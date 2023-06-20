@@ -21,24 +21,34 @@ struct CustomerForm: View {
     private var customerFirstNameIsNotBrianValidator: Validator {
         return CustomerFirstNameIsNotBrianValidator(customer: customer)
     }
+}
+
+extension CustomerForm {
 
     var body: some View {
         Form {
             Section {
+                DatePicker("Birthday Party", selection: $customer.birthDate)
+                    .datePickerStyle(AdaptiveDatePickerStyle())
+                
+                DatePicker("Birthday", selection: $customer.birthDate)
+                    .datePickerStyle(AdaptiveDatePickerStyle())
+                
+                
                 TextField("customer-form.first-name.label", text: $customer.firstName)
                     .formLabel("customer-form.first-name.label")
                     .required()
-
+                
                 TextField("customer-form.last-name.label", text: $customer.lastName)
                     .formLabel("customer-form.last-name.label")
                     .optional()
-
+                
                 Toggle("customer-form.is-favorite.label", isOn: $customer.isFavorite.animation())
-
+                
                 if customer.isFavorite {
                     Label("customer-form.celebrate.label", systemImage: "heart.fill")
                 }
-
+                
                 TextField("First Name", text: $customer.firstName.animation())
                     .formField("First Name", validator: customerFirstNameIsNotBrianValidator)
                     .optional()

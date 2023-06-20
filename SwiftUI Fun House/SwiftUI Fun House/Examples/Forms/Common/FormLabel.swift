@@ -16,7 +16,10 @@ struct FormField<Content>: View, FormLabelCapable where Content: View & FormLabe
         self.validator = validator
         self.content = content
     }
+}
 
+extension FormField {
+    
     var body: some View {
         content(titleKey)
             .formField(titleKey, validator: validator)
@@ -25,6 +28,7 @@ struct FormField<Content>: View, FormLabelCapable where Content: View & FormLabe
 
 extension View where Self: FormLabelCapable {
 
+    @MainActor
     func formField(_ titleKey: LocalizedStringKey, validator: Validator? = nil) -> some View {
         VStack(alignment: .leading, spacing: 0) {
             Group {

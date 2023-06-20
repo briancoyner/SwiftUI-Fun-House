@@ -4,7 +4,9 @@ struct BarberPoleView: View {
 
     let primaryColor: Color
     let secondaryColor: Color
+}
 
+extension BarberPoleView {
     var body: some View {
         GeometryReader { context in
             let stripeHeight: CGFloat = context.size.height / 10
