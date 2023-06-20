@@ -30,6 +30,9 @@
 		5D56099E28517A6800004B22 /* FormLabelCapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56099D28517A6800004B22 /* FormLabelCapable.swift */; };
 		5D5609A028517BBD00004B22 /* View+FormLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56099F28517BBD00004B22 /* View+FormLabel.swift */; };
 		5D73E8A72A41D25800A45DB8 /* AdaptiveDatePickerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D73E8A62A41D25800A45DB8 /* AdaptiveDatePickerStyle.swift */; };
+		5D73E8AB2A41D68300A45DB8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5D73E8A82A41D68300A45DB8 /* LICENSE */; };
+		5D73E8AC2A41D68300A45DB8 /* ThreePointCircle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5D73E8A92A41D68300A45DB8 /* ThreePointCircle.gif */; };
+		5D73E8AD2A41D68300A45DB8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5D73E8AA2A41D68300A45DB8 /* README.md */; };
 		5D81BCE522D7EBAE0051908E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BCE422D7EBAE0051908E /* MenuView.swift */; };
 		5D81BCE722D7EBAF0051908E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCE622D7EBAF0051908E /* Assets.xcassets */; };
 		5D81BCEA22D7EBAF0051908E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D81BCE922D7EBAF0051908E /* Preview Assets.xcassets */; };
@@ -84,6 +87,9 @@
 		5D56099D28517A6800004B22 /* FormLabelCapable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelCapable.swift; sourceTree = "<group>"; };
 		5D56099F28517BBD00004B22 /* View+FormLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+FormLabel.swift"; sourceTree = "<group>"; };
 		5D73E8A62A41D25800A45DB8 /* AdaptiveDatePickerStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveDatePickerStyle.swift; sourceTree = "<group>"; };
+		5D73E8A82A41D68300A45DB8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5D73E8A92A41D68300A45DB8 /* ThreePointCircle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ThreePointCircle.gif; path = ../ThreePointCircle.gif; sourceTree = "<group>"; };
+		5D73E8AA2A41D68300A45DB8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5D81BCDD22D7EBAE0051908E /* SwiftUI Fun House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Fun House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D81BCE422D7EBAE0051908E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		5D81BCE622D7EBAF0051908E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -194,6 +200,9 @@
 			isa = PBXGroup;
 			children = (
 				5D81BCDF22D7EBAE0051908E /* SwiftUI Fun House */,
+				5D73E8A82A41D68300A45DB8 /* LICENSE */,
+				5D73E8AA2A41D68300A45DB8 /* README.md */,
+				5D73E8A92A41D68300A45DB8 /* ThreePointCircle.gif */,
 				5D81BCDE22D7EBAE0051908E /* Products */,
 				5DA0168429D4867000ED98C1 /* Frameworks */,
 			);
@@ -407,8 +416,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D73E8AD2A41D68300A45DB8 /* README.md in Resources */,
 				5DC422B32519A70C00B0508D /* Localizable.strings in Resources */,
 				5D81BCEA22D7EBAF0051908E /* Preview Assets.xcassets in Resources */,
+				5D73E8AC2A41D68300A45DB8 /* ThreePointCircle.gif in Resources */,
+				5D73E8AB2A41D68300A45DB8 /* LICENSE in Resources */,
 				5D81BCE722D7EBAF0051908E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
