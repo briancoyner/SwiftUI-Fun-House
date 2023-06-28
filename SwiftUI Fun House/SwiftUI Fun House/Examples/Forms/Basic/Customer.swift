@@ -22,35 +22,20 @@ struct CustomerFirstNameIsNotBrianValidator: Validator {
     let customer: Customer
 
     func validate() -> ValidationResult? {
-        if let error = customer.firstNameValidation {
-            return .error(error)
+        if customer.firstName != "Brian" {
+            return .error(CustomerError.firstNameIsNotBrian)
         } else {
             return nil
         }
-
-//        if customer.lastName != "Brian" {
-//            return .error(CustomerError.firstNameIsNotBrian)
-//        } else {
-//            return nil
-//        }
     }
 }
 
-@MainActor
+@Observable
 final class Customer: ObservableObject {
-    @Published var firstName: String = "Brian" {
-        didSet {
-            if firstName != "Brian" {
-                firstNameValidation = CustomerError.firstNameIsNotBrian
-            } else {
-                firstNameValidation = nil
-            }
-        }
-    }
+    var firstName: String = "Brian"
+    var lastName: String = "Coyner"
+    var birthDate: Date = Date()
+    var isFavorite = false
 
-    @Published var lastName: String = "Coyner"
-    @Published var birthDate: Date = Date()
-    @Published var isFavorite = false
-
-    var firstNameValidation: LocalizedError?
+    var firstNameValidation: LocalizedError? = nil
 }

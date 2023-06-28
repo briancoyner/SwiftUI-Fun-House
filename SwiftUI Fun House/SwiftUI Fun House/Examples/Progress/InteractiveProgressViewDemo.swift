@@ -8,7 +8,7 @@ import SwiftUI
 /// A demo showing the custom `InteractiveProgressViewStyle` attached to a `ProgressView`
 struct InteractiveProgressViewDemo : View {
 
-    @ObservedObject private var properties = ProgressDemoProperties()
+    @Bindable private var properties = ProgressDemoProperties()
 
     var body: some View {
         VStack {
@@ -69,8 +69,6 @@ private struct Cell: View {
     }
 }
 
-struct InteractiveProgressViewDemo_Previews: PreviewProvider {
-    static var previews: some View {
-        InteractiveProgressViewDemo()
-    }
+#Preview {
+    InteractiveProgressViewDemo()
 }

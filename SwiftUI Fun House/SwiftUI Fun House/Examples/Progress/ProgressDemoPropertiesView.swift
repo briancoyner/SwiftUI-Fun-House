@@ -8,8 +8,8 @@ import SwiftUI
 
 struct ProgressDemoPropertiesView : View {
     
-    @ObservedObject var properties: ProgressDemoProperties
-    
+    @Bindable var properties: ProgressDemoProperties
+
     var body: some View {
         Section {
             Picker(selection: $properties.selectedColor.animation(), label: EmptyView()) {
@@ -17,6 +17,7 @@ struct ProgressDemoPropertiesView : View {
                     Text(String(describing: $0.self).capitalized)
                 }
             }.pickerStyle(SegmentedPickerStyle())
+
             Slider(value: $properties.progress, in: 0.0...1.0, step: 0.01)
             Stepper("Progress", value: $properties.progress.animation(), in: 0.0...1.0, step: 0.25)
         }

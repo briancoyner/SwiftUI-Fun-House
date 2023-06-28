@@ -12,18 +12,14 @@ import SwiftUI
 /// - Note: trying out different API techniques for annotating if a field is required or optional.
 ///
 /// - Note: trying out different API ideas for how to display `TextField`s that need an additional label to denote what the value represents.
-
 struct CustomerForm: View {
     
-    @StateObject
+    @Bindable
     private var customer = Customer()
 
     private var customerFirstNameIsNotBrianValidator: Validator {
         return CustomerFirstNameIsNotBrianValidator(customer: customer)
     }
-}
-
-extension CustomerForm {
 
     var body: some View {
         Form {
@@ -76,12 +72,6 @@ extension CustomerForm {
     }
 }
 
-#if DEBUG
-struct CustomerForm_Previews : PreviewProvider {
-    static var previews: some View {
-        NavigationStack {
-            CustomerForm()
-        }
-    }
+#Preview {
+    CustomerForm()
 }
-#endif

@@ -7,11 +7,8 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class ProgressDemoProperties: ObservableObject {
-    
-    @Published
+@Observable
+final class ProgressDemoProperties {
     var selectedColor: Color = .blue
-    
-    @Published
     var progress: CGFloat = 0.25
 }

@@ -49,13 +49,8 @@ struct LissajousDemoView: View {
     }
 }
 
-#if DEBUG
-struct LissajousDemoView_Previews : PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            LissajousDemoView()
-        }
-
+#Preview {
+    NavigationView {
+        LissajousDemoView()
     }
 }
-#endif

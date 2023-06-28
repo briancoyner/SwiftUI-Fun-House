@@ -4,29 +4,14 @@ import SwiftUI
 
 struct AdaptiveRoundedRectangleDemo: View {
 
-    @State
-    private var corners: AdaptiveRoundedRectangle.Corner = .all
-
-    @State
-    private var cornerRadius: CGFloat = 11
-
-    @State
-    private var drawRadius: Bool = true
-
-    @State
-    private var topLeft: Bool = true
-
-    @State
-    private var topRight: Bool = true
-
-    @State
-    private var bottomLeft: Bool = true
-
-    @State
-    private var bottomRight: Bool = true
-
-    @State
-    private var height: CGFloat = 100
+    @State private var corners: AdaptiveRoundedRectangle.Corner = .all
+    @State private var cornerRadius: CGFloat = 11
+    @State private var drawRadius: Bool = true
+    @State private var topLeft: Bool = true
+    @State private var topRight: Bool = true
+    @State private var bottomLeft: Bool = true
+    @State private var bottomRight: Bool = true
+    @State private var height: CGFloat = 100
 
     var body: some View {
         List {
@@ -53,7 +38,6 @@ struct AdaptiveRoundedRectangleDemo: View {
                 }
                 
                 Toggle("Radius?", isOn: $drawRadius)
-                
                 Toggle("Top Left", isOn: $topLeft)
                 Toggle("Top Right", isOn: $topRight)
                 Toggle("Bottom Left", isOn: $bottomLeft)
@@ -111,11 +95,6 @@ struct AdaptiveRoundedRectangleDemo: View {
     }
 }
 
-struct AdaptiveRoundedRectangleDemo_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            AdaptiveRoundedRectangleDemo()
-            AdaptiveRoundedRectangleDemo()
-        }
-    }
+#Preview {
+    AdaptiveRoundedRectangleDemo()
 }

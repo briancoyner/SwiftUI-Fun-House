@@ -25,16 +25,3 @@ struct PieSlice: Shape {
         return path
     }
 }
-
-#if DEBUG
-struct PieSlice_Previews : PreviewProvider {
-    static var previews: some View {
-        Group {
-            PieSlice()
-                .padding()
-            PieSlice()
-                .padding(45)
-        }
-    }
-}
-#endif

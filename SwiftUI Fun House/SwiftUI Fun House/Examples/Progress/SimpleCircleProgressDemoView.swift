@@ -8,8 +8,8 @@ import SwiftUI
 
 struct SimpleCircleProgressDemoView: View {
     
-    @ObservedObject var properties = ProgressDemoProperties()
-    
+    @Bindable private var properties = ProgressDemoProperties()
+
     var body: some View {
         VStack(spacing: 44) {
             // A stroked circle looks pretty good

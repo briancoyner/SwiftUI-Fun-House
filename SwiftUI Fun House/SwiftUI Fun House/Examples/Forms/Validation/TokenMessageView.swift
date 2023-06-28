@@ -38,9 +38,7 @@ extension TokenMessageView {
     }
 }
 
-struct TokenMessageView_Previews: PreviewProvider {
-    static var previews: some View {
-        TokenMessageView(titleKey: "First Name", message: "The first name cannot be 'Brian'.")
-            .padding()
-    }
+#Preview {
+    TokenMessageView(titleKey: "First Name", message: "The first name cannot be 'Brian'.")
+        .padding()
 }

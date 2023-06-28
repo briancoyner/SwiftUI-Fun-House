@@ -8,7 +8,7 @@ import SwiftUI
 
 struct IndeterminateProgressDemoView: View {
     
-    @ObservedObject private var properties = ProgressDemoProperties()
+    @Bindable private var properties = ProgressDemoProperties()
     
     var body: some View {
         VStack {

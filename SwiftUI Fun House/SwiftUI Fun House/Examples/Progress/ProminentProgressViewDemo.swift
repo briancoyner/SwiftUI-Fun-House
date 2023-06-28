@@ -9,7 +9,7 @@ import SwiftUI
 /// A demo showing the custom `ProminentProgressViewStyle` attached to a `ProgressView`
 struct ProminentProgressViewDemo : View {
     
-    @ObservedObject private var properties = ProgressDemoProperties()
+    @Bindable private var properties = ProgressDemoProperties()
     
     var body: some View {
         VStack {
@@ -17,7 +17,8 @@ struct ProminentProgressViewDemo : View {
                 .progressViewStyle(ProminentProgressViewStyle())
                 .padding(88)
 
-            Divider().padding([.top, .bottom])
+            Divider()
+                .padding([.top, .bottom])
 
             ProgressDemoPropertiesView(properties: properties)
         }
@@ -26,10 +27,6 @@ struct ProminentProgressViewDemo : View {
     }
 }
 
-#if DEBUG
-struct ProminentProgressViewDemo_Previews : PreviewProvider {
-    static var previews: some View {
-        ProminentProgressViewDemo()
-    }
+#Preview {
+    ProminentProgressViewDemo()
 }
-#endif

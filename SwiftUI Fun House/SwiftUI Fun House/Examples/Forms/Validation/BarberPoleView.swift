@@ -26,9 +26,7 @@ extension BarberPoleView {
     }
 }
 
-struct BarberPoleView_Previews: PreviewProvider {
-    static var previews: some View {
-        BarberPoleView(primaryColor: .red, secondaryColor: .yellow)
-            .frame(width: 5, height: 44, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-    }
+#Preview {
+    BarberPoleView(primaryColor: .red, secondaryColor: .yellow)
+        .frame(width: 5, height: 44, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
 }

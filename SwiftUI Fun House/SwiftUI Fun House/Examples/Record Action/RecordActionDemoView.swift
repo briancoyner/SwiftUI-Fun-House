@@ -66,13 +66,9 @@ extension RecordActionView.State {
     }
 }
 
-struct RecordActionDemoView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            NavigationView {
-                RecordActionDemoView()
-            }
-            .preferredColorScheme(.dark)
-        }
+#Preview {
+    NavigationView {
+        RecordActionDemoView()
     }
+    .preferredColorScheme(.dark)
 }
