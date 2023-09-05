@@ -8,10 +8,10 @@ import SwiftUI
 struct FormField<Content>: View, FormLabelCapable where Content: View & FormLabelCapable {
 
     private let titleKey: LocalizedStringKey
-    private let validator: Validator?
+    private let validator: (any Validator)?
     private let content: (LocalizedStringKey) -> Content
 
-    init(_ titleKey: LocalizedStringKey, validator: Validator? = nil, content: @escaping (LocalizedStringKey) -> Content) {
+    init(_ titleKey: LocalizedStringKey, validator: (any Validator)? = nil, content: @escaping (LocalizedStringKey) -> Content) {
         self.titleKey = titleKey
         self.validator = validator
         self.content = content
@@ -29,7 +29,7 @@ extension FormField {
 extension View where Self: FormLabelCapable {
 
     @MainActor
-    func formField(_ titleKey: LocalizedStringKey, validator: Validator? = nil) -> some View {
+    func formField(_ titleKey: LocalizedStringKey, validator: (any Validator)? = nil) -> some View {
         VStack(alignment: .leading, spacing: 0) {
             Group {
                 switch validator?.validate() {

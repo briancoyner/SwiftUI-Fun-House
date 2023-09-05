@@ -20,7 +20,8 @@ struct ThreePointCircleDemo: View {
                     .frame(width: 14, height: 14)
                     .offset(x: model.point.x - 7, y: model.point.y - 7)
             }
-
+        }
+        .overlay(alignment: .topLeading) {
             if points.count == 3 {
                 let (center, radius) = deriveCircle(
                     point1: points[0].point,
@@ -56,9 +57,4 @@ struct ThreePointCircleDemo: View {
         }
         .edgesIgnoringSafeArea(.all)
     }
-}
-
-#Preview {
-    ThreePointCircleDemo()
-        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
 }

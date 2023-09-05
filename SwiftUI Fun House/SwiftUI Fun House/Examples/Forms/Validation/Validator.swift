@@ -7,8 +7,8 @@ import Foundation
 import SwiftUI
 
 enum ValidationResult {
-    case warning(LocalizedError)
-    case error(LocalizedError)
+    case warning(any LocalizedError)
+    case error(any LocalizedError)
 }
 
 @MainActor

@@ -10,9 +10,9 @@ struct ValidatingTextField: View {
     private let titleKey: LocalizedStringKey
     private let binding: Binding<String>
 
-    private let validator: Validator
+    private let validator: any Validator
 
-    init(_ titleKey: LocalizedStringKey, text: Binding<String>, validator: Validator) {
+    init(_ titleKey: LocalizedStringKey, text: Binding<String>, validator: any Validator) {
         self.titleKey = titleKey
         self.binding = text
         self.validator = validator

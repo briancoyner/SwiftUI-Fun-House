@@ -37,5 +37,5 @@ final class Customer: ObservableObject {
     var birthDate: Date = Date()
     var isFavorite = false
 
-    var firstNameValidation: LocalizedError? = nil
+    var firstNameValidation: (any LocalizedError)? = nil
 }

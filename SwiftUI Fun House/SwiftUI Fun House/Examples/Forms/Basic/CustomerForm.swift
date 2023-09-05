@@ -17,7 +17,7 @@ struct CustomerForm: View {
     @Bindable
     private var customer = Customer()
 
-    private var customerFirstNameIsNotBrianValidator: Validator {
+    private var customerFirstNameIsNotBrianValidator: any Validator {
         return CustomerFirstNameIsNotBrianValidator(customer: customer)
     }
 
